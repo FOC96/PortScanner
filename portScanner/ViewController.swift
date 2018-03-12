@@ -10,22 +10,27 @@ import UIKit
 import SwiftSocket
 
 class ViewController: UIViewController {
-    //
+    // Outlets
     @IBOutlet weak var addressTxt: UITextField!
     @IBOutlet weak var startPortTxt: UITextField!
     @IBOutlet weak var stopPortTxt: UITextField!
+    @IBOutlet weak var activityView: UIActivityIndicatorView!
+    @IBOutlet weak var scanButton: UIButton!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        activityView.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
+    func showActivityIndic() {
+        activityView.activityIndicatorViewStyle = .gray
+        activityView.isHidden = false
+        activityView.startAnimating()
+    }
     
     
     // Scans ports from an address and a range given by the user
@@ -62,6 +67,14 @@ class ViewController: UIViewController {
                 if let stop : Int = Int(stopPortTxt.text!) {
                     if start < stop {
                         scanPorts(address: address, start: start, stop: stop)
+//                        DispatchQueue.global(qos: .utility).async {
+//                            self.scanPorts(address: address, start: start, stop: stop)
+//                        }
+//
+//                        DispatchQueue.main.async {
+//                            self.showActivityIndic()
+//                            self.scanButton.isEnabled = false
+//                        }
                     } else {
                         displayAlert(title: "Error en el rango", msg: "Ingresa un rango válido")
                     }
