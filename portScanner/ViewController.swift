@@ -9,28 +9,27 @@
 import UIKit
 import SwiftSocket
 
+var addressGlobal = ""
+
 class ViewController: UIViewController {
     // Outlets
     @IBOutlet weak var addressTxt: UITextField!
     @IBOutlet weak var startPortTxt: UITextField!
     @IBOutlet weak var stopPortTxt: UITextField!
-    @IBOutlet weak var activityView: UIActivityIndicatorView!
     @IBOutlet weak var scanButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        activityView.isHidden = true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    func showActivityIndic() {
-        activityView.activityIndicatorViewStyle = .gray
-        activityView.isHidden = false
-        activityView.startAnimating()
-    }
     
     
     // Scans ports from an address and a range given by the user
@@ -39,6 +38,7 @@ class ViewController: UIViewController {
         
         for port in start...stop {
             let client = TCPClient(address: address, port: Int32(port))
+            addressGlobal = address
             
             switch client.connect(timeout: 2) {
             // There's connection
@@ -49,9 +49,12 @@ class ViewController: UIViewController {
             case .failure(let error):
                 print("\(port): \(error.localizedDescription)")
             }
+            if port == stop {
+                performSegue(withIdentifier: "showTable", sender: nil)
+            }
         }
         UserDefaults.standard.set(openPorts, forKey: "ActivePorts")
-        performSegue(withIdentifier: "showTable", sender: nil)
+//        performSegue(withIdentifier: "showTable", sender: nil)
     }
     
     func displayAlert(title : String, msg : String) {
@@ -67,14 +70,6 @@ class ViewController: UIViewController {
                 if let stop : Int = Int(stopPortTxt.text!) {
                     if start < stop {
                         scanPorts(address: address, start: start, stop: stop)
-//                        DispatchQueue.global(qos: .utility).async {
-//                            self.scanPorts(address: address, start: start, stop: stop)
-//                        }
-//
-//                        DispatchQueue.main.async {
-//                            self.showActivityIndic()
-//                            self.scanButton.isEnabled = false
-//                        }
                     } else {
                         displayAlert(title: "Error en el rango", msg: "Ingresa un rango válido")
                     }

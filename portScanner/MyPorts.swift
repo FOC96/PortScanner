@@ -8,7 +8,7 @@
 
 import UIKit
 
-var openPorts : [Int] = []
+var availablePorts : [Int32] = []
 var selectedPort = 0
 
 class MyPorts: UITableViewController {
@@ -25,13 +25,21 @@ class MyPorts: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
-        if let tempPorts = UserDefaults.standard.object(forKey: "ActivePorts") as? [Int] {
-            openPorts = tempPorts
+        if let tempPorts = UserDefaults.standard.object(forKey: "ActivePorts") as? [Int32] {
+            availablePorts = tempPorts
         }
         tableView.reloadData()
-        print(openPorts)
+        print(availablePorts)
+        
+        self.refreshControl?.addTarget(self, action: #selector(refresh), for: UIControlEvents.valueChanged)
     }
 
+    @objc func refresh() {
+        tableView.reloadData()
+        self.refreshControl?.endRefreshing()
+        print(availablePorts)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -46,22 +54,22 @@ class MyPorts: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return openPorts.count
+        return availablePorts.count
     }
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "Cell")
         
-        cell.textLabel?.text = "Puerto \(openPorts[indexPath.row])"
+        cell.textLabel?.text = "Puerto \(availablePorts[indexPath.row])"
         
         return cell
     }
     
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        selectedPort = indexPath.row
-//        performSegue(withIdentifier: "toDetail", sender: nil)
-//    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedPort = Int(availablePorts[indexPath.row])
+        performSegue(withIdentifier: "showTerminal", sender: nil)
+    }
 
     
     
