@@ -18,18 +18,12 @@ class MyPorts: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
         if let tempPorts = UserDefaults.standard.object(forKey: "ActivePorts") as? [Int32] {
             availablePorts = tempPorts
         }
         tableView.reloadData()
-        print(availablePorts)
+        print("Puertos disponibles: \(availablePorts)")
         
         self.refreshControl?.addTarget(self, action: #selector(refresh), for: UIControlEvents.valueChanged)
     }

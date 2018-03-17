@@ -24,8 +24,8 @@ class Terminal: UIViewController {
 
         NotificationCenter.default.addObserver(self, selector: #selector(Terminal.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(Terminal.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
-        print(selectedPort)
         createCon()
+        print("Puerto seleccionado: \(selectedPort)")
     }
     
     
@@ -35,22 +35,13 @@ class Terminal: UIViewController {
         
         switch client.connect(timeout: 4) {
         case .success:
-            switch client.send(string: "GET \(addressGlobal) HTTP/1.0\n\n" ) {
-            case .success:
-                consoleText.text = "CONNECTED TO PORT \(selectedPort)\n\n"
-                guard let data = client.read(1024*10) else { return }
-                
-                if let response = String(bytes: data, encoding: .utf8) {
-                    var text = consoleText.text
-                    text?.append("\n\n\(response)")
-                    consoleText.text = text
-                }
-            case .failure(let error):
-                print(error)
-            }
+            consoleText.text = "Connected to \(addressGlobal)"
+//            if let response = sendMessage(msg: "GET / HTTP/1.0\n\n", client: client) {
+//                showInTextView(string: "Response: \(response)")
+//            }
         // Can't establish connection
         case .failure(let error):
-            consoleText.text = "COULDN'T CONNECT TO PORT \(selectedPort)\n\(error.localizedDescription)"
+            consoleText.text = "💩 Algo salió mal tratando destablecer conexión con \(addressGlobal) \n\(String(describing: error))"
         }
     }
     
@@ -88,19 +79,52 @@ class Terminal: UIViewController {
     
     
     @IBAction func sendButton(_ sender: Any) {
+        let client = TCPClient(address: addressGlobal, port: Int32(selectedPort))
         hideKeyboard()
+        
         if let msg = msgText.text {
             if msg != "" {
-                var complete = consoleText.text
-                complete?.append("\n\(msg)")
-                consoleText.text = complete
+                showInTextView(string: msg)
                 msgText.text = ""
+                if let response = sendMessage(msg: msg, client: client) {
+                    showInTextView(string: "\n\(response)")
+                }
             }
         }
         
     }
     
     
+    func sendMessage(msg : String, client: TCPClient) -> String? {
+        switch client.connect(timeout: 4) {
+        case .success:
+            switch client.send(string: msg) {
+            case .success:
+                return readResponse(from: client)
+            case .failure(let error):
+                showInTextView(string: String(describing: error))
+                return nil
+            }
+        case .failure(let error):
+            consoleText.text = "💩 Algo salió mal tratando destablecer conexión con \(addressGlobal) \n\(String(describing: error))"
+            return nil
+        }
+    }
+    
+    
+    
+    func showInTextView(string : String) {
+        consoleText.text = consoleText.text.appending("\n\(string)")
+    }
+    
+    
+    
+    func readResponse(from client: TCPClient) -> String? {
+        guard let response = client.read(1024*90, timeout: 5) else { showInTextView(string: "Error 💩"); return nil }
+        let respo = String(bytes: response, encoding: .utf8)
+        print(respo)
+        return String(bytes: response, encoding: .utf8)
+    }
     
     
     /*

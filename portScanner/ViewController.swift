@@ -47,8 +47,9 @@ class ViewController: UIViewController {
                 openPorts.append(port)
             // Can't establish connection
             case .failure(let error):
-                print("\(port): \(error.localizedDescription)")
+                print("no hay conexión en el puerto \(port): \(error.localizedDescription)")
             }
+            client.close()
             if port == stop {
                 performSegue(withIdentifier: "showTable", sender: nil)
             }
