@@ -9,7 +9,7 @@
 import UIKit
 import SwiftSocket
 
-class Terminal: UIViewController {
+class terminal80: UIViewController {
     @IBOutlet weak var consoleText: UITextView!
     @IBOutlet weak var msgText: TextViewDesign!
     
@@ -22,8 +22,8 @@ class Terminal: UIViewController {
         consoleTapped.numberOfTouchesRequired = 1
         consoleText.addGestureRecognizer(consoleTapped)
 
-        NotificationCenter.default.addObserver(self, selector: #selector(Terminal.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(Terminal.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(terminal80.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(terminal80.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         createCon()
         print("Puerto seleccionado: \(selectedPort)")
     }
