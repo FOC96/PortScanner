@@ -12,6 +12,7 @@ import SwiftSocket
 class terminal80: UIViewController {
     @IBOutlet weak var consoleText: UITextView!
     @IBOutlet weak var msgText: TextViewDesign!
+    let client = TCPClient(address: addressGlobal, port: Int32(selectedPort))
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,8 +32,6 @@ class terminal80: UIViewController {
     
     //Creates the connection and socket to the port NEEDS TO BE FIXED!
     func createCon() {
-        let client = TCPClient(address: addressGlobal, port: Int32(selectedPort))
-        
         switch client.connect(timeout: 4) {
         case .success:
             consoleText.text = "Connected to \(addressGlobal)"
@@ -79,14 +78,13 @@ class terminal80: UIViewController {
     
     
     @IBAction func sendButton(_ sender: Any) {
-        let client = TCPClient(address: addressGlobal, port: Int32(selectedPort))
         hideKeyboard()
         
         if let msg = msgText.text {
             if msg != "" {
                 showInTextView(string: msg)
                 msgText.text = ""
-                if let response = sendMessage(msg: msg, client: client) {
+                if let response = sendMessage(msg: msg) {
                     showInTextView(string: "\n\(response)")
                 }
             }
@@ -95,18 +93,12 @@ class terminal80: UIViewController {
     }
     
     
-    func sendMessage(msg : String, client: TCPClient) -> String? {
-        switch client.connect(timeout: 4) {
+    func sendMessage(msg : String) -> String? {
+        switch client.send(string: msg) {
         case .success:
-            switch client.send(string: msg) {
-            case .success:
-                return readResponse(from: client)
-            case .failure(let error):
-                showInTextView(string: String(describing: error))
-                return nil
-            }
+            return readResponse()
         case .failure(let error):
-            consoleText.text = "💩 Algo salió mal tratando destablecer conexión con \(addressGlobal) \n\(String(describing: error))"
+            showInTextView(string: "💩 \(String(describing: error.localizedDescription))")
             return nil
         }
     }
@@ -119,13 +111,16 @@ class terminal80: UIViewController {
     
     
     
-    func readResponse(from client: TCPClient) -> String? {
-        guard let response = client.read(1024*90, timeout: 5) else { showInTextView(string: "Error 💩"); return nil }
+    func readResponse() -> String? {
+        guard let response = client.read((1024*100), timeout: 5) else { showInTextView(string: "💩 Error leyendo la respuesta"); return nil }
         let respo = String(bytes: response, encoding: .utf8)
-        print(respo)
-        return String(bytes: response, encoding: .utf8)
+        return respo
     }
     
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        client.close()
+    }
     
     /*
     // MARK: - Navigation

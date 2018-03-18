@@ -10,12 +10,12 @@
 		13557B2B74B1195788562A4D805E2400 /* TCPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073B5E44A489A40FEBFC1148C40D1B5 /* TCPClient.swift */; };
 		1707D406D64E601A874A6ED99E5FA0E1 /* UDPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886AD7CDE1F5CC782474EF3443C2BA56 /* UDPClient.swift */; };
 		4DAB8D7B42F8D6B03A4CCB9BF8827F3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		570D543F7C317C7486A0340921A62E56 /* SwiftSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6F1113B6CB3FEBB75D760E6B096F87 /* SwiftSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		570D543F7C317C7486A0340921A62E56 /* SwiftSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 566633F20D21C285C3F09F065316813F /* SwiftSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		81672417B3E0F084A646C9D11CE42DAD /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FF9585981F7B619C85C2C6E4DCF91 /* Socket.swift */; };
 		8FEE1AFDE5D17FFDD05BA1A049ABB18A /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 21E505997513D83AFD4626EECDFF20D1 /* ytcpsocket.c */; };
-		994CDA4DD93E0B0614B7B2B6C253C240 /* Pods-portScanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D937962348F1268C04E9BE2937FB20 /* Pods-portScanner-dummy.m */; };
-		9F4ABC720AB20AA49B0F079600EA6316 /* Pods-portScanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB01BAA3EED8243C7242182B0EBF7C25 /* Pods-portScanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C45A667F02CBC78363D5C134E971856E /* SwiftSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3482A89ED856ED2B4645D3BF63D48C /* SwiftSocket-dummy.m */; };
+		994CDA4DD93E0B0614B7B2B6C253C240 /* Pods-portScanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA94C075E17CEC7A3F8807F01AF3B316 /* Pods-portScanner-dummy.m */; };
+		9F4ABC720AB20AA49B0F079600EA6316 /* Pods-portScanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B04D3DD5F64C259B581183CC7D56DCBC /* Pods-portScanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C45A667F02CBC78363D5C134E971856E /* SwiftSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EF3006C7C4B084D70916C2736D38C1 /* SwiftSocket-dummy.m */; };
 		C7E87E17E6017F5A16371C3F4C21AEFB /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 5752BCCE211EF17F51DD509637DDD333 /* yudpsocket.c */; };
 		D89933E889F2741C444E91DF02E02C68 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED4EEBEF28F2D922BF256FED95DA86C /* Result.swift */; };
 		E6BEE29B2466C49B96539FC98A1509A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -32,32 +32,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1A3482A89ED856ED2B4645D3BF63D48C /* SwiftSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSocket-dummy.m"; sourceTree = "<group>"; };
+		027DAD342DB79844CBF8CF9A1911F481 /* Pods-portScanner-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-portScanner-resources.sh"; sourceTree = "<group>"; };
 		21E505997513D83AFD4626EECDFF20D1 /* ytcpsocket.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ytcpsocket.c; path = Sources/ytcpsocket.c; sourceTree = "<group>"; };
-		2E755E372224FE54BF35609667B715B7 /* SwiftSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftSocket.modulemap; sourceTree = "<group>"; };
-		41ABC195FB77C6F55172860F6116DC66 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44C277FEBD4445FD32195982BF3D6510 /* SwiftSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSocket.xcconfig; sourceTree = "<group>"; };
+		31F93E7113EED69B088AB532C45E5FC0 /* SwiftSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSocket-prefix.pch"; sourceTree = "<group>"; };
+		3F08260D837A75615DD386875E132752 /* Pods-portScanner-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-portScanner-acknowledgements.plist"; sourceTree = "<group>"; };
+		409717FE1D7CEC0E97041376558ADB96 /* Pods-portScanner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-portScanner-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4A79195D01A82ED7273A73F67FA6E0ED /* Pods_portScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_portScanner.framework; path = "Pods-portScanner.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		566633F20D21C285C3F09F065316813F /* SwiftSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSocket-umbrella.h"; sourceTree = "<group>"; };
 		5752BCCE211EF17F51DD509637DDD333 /* yudpsocket.c */ = {isa = PBXFileReference; includeInIndex = 1; name = yudpsocket.c; path = Sources/yudpsocket.c; sourceTree = "<group>"; };
+		6389EADBCDE09511331FB92619185122 /* Pods-portScanner-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-portScanner-frameworks.sh"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		68C006A90FFC4D0A66FA6EC4A21E2C67 /* Pods-portScanner-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-portScanner-frameworks.sh"; sourceTree = "<group>"; };
+		777B780574BE2141C0C5A02EA2518BF7 /* SwiftSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftSocket.modulemap; sourceTree = "<group>"; };
 		886AD7CDE1F5CC782474EF3443C2BA56 /* UDPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UDPClient.swift; path = Sources/UDPClient.swift; sourceTree = "<group>"; };
-		8A9A27C833A0D22DCDFF5FE3CB44E25D /* SwiftSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSocket-prefix.pch"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9835C45697B2331D7BE2A9F647CDB1D9 /* Pods-portScanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-portScanner.modulemap"; sourceTree = "<group>"; };
+		97127948B567B5DF799BECE808D6BFBF /* SwiftSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSocket.xcconfig; sourceTree = "<group>"; };
+		9CF22CB071D3465975A47DF95BAEFB51 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9ED4EEBEF28F2D922BF256FED95DA86C /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Result.swift; sourceTree = "<group>"; };
-		A1A39E3EFCEBAD4763F608649C7E0600 /* Pods-portScanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-portScanner.debug.xcconfig"; sourceTree = "<group>"; };
-		A3BFFF1DD5DD3EE24FD56321786394CC /* Pods-portScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-portScanner.release.xcconfig"; sourceTree = "<group>"; };
-		A9D937962348F1268C04E9BE2937FB20 /* Pods-portScanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-portScanner-dummy.m"; sourceTree = "<group>"; };
-		AA6F1113B6CB3FEBB75D760E6B096F87 /* SwiftSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSocket-umbrella.h"; sourceTree = "<group>"; };
-		B2E2F727367CE27499A82FDBC768A1CF /* Pods-portScanner-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-portScanner-resources.sh"; sourceTree = "<group>"; };
-		B3202FD75091239701282BEB5A6EB982 /* Pods-portScanner-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-portScanner-acknowledgements.plist"; sourceTree = "<group>"; };
-		B92C6CBF8D806D489CB94CB7C919BC8F /* Pods-portScanner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-portScanner-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AAC1945A0F79F3986B3C3BFC432A38E6 /* Pods-portScanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-portScanner.modulemap"; sourceTree = "<group>"; };
+		AAC966AAA8AF4A3D93AC0CB092A5B217 /* Pods-portScanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-portScanner.debug.xcconfig"; sourceTree = "<group>"; };
+		AAE5BB238F4A78CE909239AC2265A93D /* Pods-portScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-portScanner.release.xcconfig"; sourceTree = "<group>"; };
+		B04D3DD5F64C259B581183CC7D56DCBC /* Pods-portScanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-portScanner-umbrella.h"; sourceTree = "<group>"; };
+		B9EF3006C7C4B084D70916C2736D38C1 /* SwiftSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSocket-dummy.m"; sourceTree = "<group>"; };
+		BA94C075E17CEC7A3F8807F01AF3B316 /* Pods-portScanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-portScanner-dummy.m"; sourceTree = "<group>"; };
 		C073B5E44A489A40FEBFC1148C40D1B5 /* TCPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TCPClient.swift; path = Sources/TCPClient.swift; sourceTree = "<group>"; };
 		DD7FF9585981F7B619C85C2C6E4DCF91 /* Socket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = Sources/Socket.swift; sourceTree = "<group>"; };
 		E7E247B2B6C83E0EEDD9020DBBE9B88D /* SwiftSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSocket.framework; path = SwiftSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ECD8997BE5D019BC2C30D245A6DE22E9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB01BAA3EED8243C7242182B0EBF7C25 /* Pods-portScanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-portScanner-umbrella.h"; sourceTree = "<group>"; };
+		F6595F8891CC6F7D1122940EC2D4234C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +91,7 @@
 		0EBEE510F87BDCD6C1988775AAE6FFC6 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				ED9EE9F63AED1D0D2F63049AFE33C02E /* Pods-portScanner */,
+				B00984C01425F64DFCC46097C6EBC152 /* Pods-portScanner */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -116,10 +116,42 @@
 				886AD7CDE1F5CC782474EF3443C2BA56 /* UDPClient.swift */,
 				21E505997513D83AFD4626EECDFF20D1 /* ytcpsocket.c */,
 				5752BCCE211EF17F51DD509637DDD333 /* yudpsocket.c */,
-				FFC9005D7761A8434EFF9966F66F9A91 /* Support Files */,
+				AE1F57FCCE0C2C4E7D884CED9E6BE226 /* Support Files */,
 			);
 			name = SwiftSocket;
 			path = SwiftSocket;
+			sourceTree = "<group>";
+		};
+		AE1F57FCCE0C2C4E7D884CED9E6BE226 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CF22CB071D3465975A47DF95BAEFB51 /* Info.plist */,
+				777B780574BE2141C0C5A02EA2518BF7 /* SwiftSocket.modulemap */,
+				97127948B567B5DF799BECE808D6BFBF /* SwiftSocket.xcconfig */,
+				B9EF3006C7C4B084D70916C2736D38C1 /* SwiftSocket-dummy.m */,
+				31F93E7113EED69B088AB532C45E5FC0 /* SwiftSocket-prefix.pch */,
+				566633F20D21C285C3F09F065316813F /* SwiftSocket-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftSocket";
+			sourceTree = "<group>";
+		};
+		B00984C01425F64DFCC46097C6EBC152 /* Pods-portScanner */ = {
+			isa = PBXGroup;
+			children = (
+				F6595F8891CC6F7D1122940EC2D4234C /* Info.plist */,
+				AAC1945A0F79F3986B3C3BFC432A38E6 /* Pods-portScanner.modulemap */,
+				409717FE1D7CEC0E97041376558ADB96 /* Pods-portScanner-acknowledgements.markdown */,
+				3F08260D837A75615DD386875E132752 /* Pods-portScanner-acknowledgements.plist */,
+				BA94C075E17CEC7A3F8807F01AF3B316 /* Pods-portScanner-dummy.m */,
+				6389EADBCDE09511331FB92619185122 /* Pods-portScanner-frameworks.sh */,
+				027DAD342DB79844CBF8CF9A1911F481 /* Pods-portScanner-resources.sh */,
+				B04D3DD5F64C259B581183CC7D56DCBC /* Pods-portScanner-umbrella.h */,
+				AAC966AAA8AF4A3D93AC0CB092A5B217 /* Pods-portScanner.debug.xcconfig */,
+				AAE5BB238F4A78CE909239AC2265A93D /* Pods-portScanner.release.xcconfig */,
+			);
+			name = "Pods-portScanner";
+			path = "Target Support Files/Pods-portScanner";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -138,24 +170,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		ED9EE9F63AED1D0D2F63049AFE33C02E /* Pods-portScanner */ = {
-			isa = PBXGroup;
-			children = (
-				ECD8997BE5D019BC2C30D245A6DE22E9 /* Info.plist */,
-				9835C45697B2331D7BE2A9F647CDB1D9 /* Pods-portScanner.modulemap */,
-				B92C6CBF8D806D489CB94CB7C919BC8F /* Pods-portScanner-acknowledgements.markdown */,
-				B3202FD75091239701282BEB5A6EB982 /* Pods-portScanner-acknowledgements.plist */,
-				A9D937962348F1268C04E9BE2937FB20 /* Pods-portScanner-dummy.m */,
-				68C006A90FFC4D0A66FA6EC4A21E2C67 /* Pods-portScanner-frameworks.sh */,
-				B2E2F727367CE27499A82FDBC768A1CF /* Pods-portScanner-resources.sh */,
-				FB01BAA3EED8243C7242182B0EBF7C25 /* Pods-portScanner-umbrella.h */,
-				A1A39E3EFCEBAD4763F608649C7E0600 /* Pods-portScanner.debug.xcconfig */,
-				A3BFFF1DD5DD3EE24FD56321786394CC /* Pods-portScanner.release.xcconfig */,
-			);
-			name = "Pods-portScanner";
-			path = "Target Support Files/Pods-portScanner";
-			sourceTree = "<group>";
-		};
 		F5B89F539E0E3602B3A2C5B27774D5BD /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,20 +177,6 @@
 				E7E247B2B6C83E0EEDD9020DBBE9B88D /* SwiftSocket.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		FFC9005D7761A8434EFF9966F66F9A91 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				41ABC195FB77C6F55172860F6116DC66 /* Info.plist */,
-				2E755E372224FE54BF35609667B715B7 /* SwiftSocket.modulemap */,
-				44C277FEBD4445FD32195982BF3D6510 /* SwiftSocket.xcconfig */,
-				1A3482A89ED856ED2B4645D3BF63D48C /* SwiftSocket-dummy.m */,
-				8A9A27C833A0D22DCDFF5FE3CB44E25D /* SwiftSocket-prefix.pch */,
-				AA6F1113B6CB3FEBB75D760E6B096F87 /* SwiftSocket-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftSocket";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,8 +242,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -298,11 +298,65 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0CF75646D3D022756DDFC73CE9793A98 /* Release */ = {
+		12C4B864767C59600DBFA238F1E2F8BC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3BFFF1DD5DD3EE24FD56321786394CC /* Pods-portScanner.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		228E7A78FF53CF6EF7BD684ED590ECA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAC966AAA8AF4A3D93AC0CB092A5B217 /* Pods-portScanner.debug.xcconfig */;
+			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -325,15 +379,15 @@
 				PRODUCT_NAME = Pods_portScanner;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		13A95306D85E4471AB6BE665B012E60A /* Debug */ = {
+		59F0302F2371FCC6B73EF0A418D40734 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -343,12 +397,10 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -356,7 +408,6 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -396,44 +447,9 @@
 			};
 			name = Debug;
 		};
-		277BBD82DA9C663F4680E01D460AF3B8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1A39E3EFCEBAD4763F608649C7E0600 /* Pods-portScanner.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-portScanner/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-portScanner/Pods-portScanner.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_portScanner;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		603335B3048569B3C55F6264C0A549CF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44C277FEBD4445FD32195982BF3D6510 /* SwiftSocket.xcconfig */;
+			baseConfigurationReference = 97127948B567B5DF799BECE808D6BFBF /* SwiftSocket.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -464,7 +480,7 @@
 		};
 		67C7B6125FAF70BFF69D7D96864785EA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44C277FEBD4445FD32195982BF3D6510 /* SwiftSocket.xcconfig */;
+			baseConfigurationReference = 97127948B567B5DF799BECE808D6BFBF /* SwiftSocket.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -494,61 +510,37 @@
 			};
 			name = Release;
 		};
-		8E8333274F4AB64785B04AB5B2A37231 /* Release */ = {
+		7545D72EB2452408FF44C1610CB6B2D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAE5BB238F4A78CE909239AC2265A93D /* Pods-portScanner.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-portScanner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-portScanner/Pods-portScanner.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_portScanner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -558,8 +550,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				13A95306D85E4471AB6BE665B012E60A /* Debug */,
-				8E8333274F4AB64785B04AB5B2A37231 /* Release */,
+				59F0302F2371FCC6B73EF0A418D40734 /* Debug */,
+				12C4B864767C59600DBFA238F1E2F8BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -576,8 +568,8 @@
 		585C72516DC26ECF9B747AE62C62CC0E /* Build configuration list for PBXNativeTarget "Pods-portScanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				277BBD82DA9C663F4680E01D460AF3B8 /* Debug */,
-				0CF75646D3D022756DDFC73CE9793A98 /* Release */,
+				228E7A78FF53CF6EF7BD684ED590ECA0 /* Debug */,
+				7545D72EB2452408FF44C1610CB6B2D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
