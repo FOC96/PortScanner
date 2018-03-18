@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		A10D6E70B5D66D7ED6BA8AE3 /* Pods_portScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A6CB88402DC231E7E2EB85 /* Pods_portScanner.framework */; };
 		BC4C0FF9205614490020B812 /* MyPorts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4C0FF8205614490020B812 /* MyPorts.swift */; };
-		BC52A92C205753E700FE072A /* Terminal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC52A92B205753E700FE072A /* Terminal.swift */; };
+		BC52A92C205753E700FE072A /* terminal80.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC52A92B205753E700FE072A /* terminal80.swift */; };
 		BC52A92E20575B9000FE072A /* TextViewDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC52A92D20575B9000FE072A /* TextViewDesign.swift */; };
 		BC52A93020575D1F00FE072A /* ViewDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC52A92F20575D1F00FE072A /* ViewDesign.swift */; };
+		BC60F26C205E48E900600138 /* terminal22.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC60F26B205E48E900600138 /* terminal22.swift */; };
+		BC6AB3DC205E3E9200008962 /* mainButtonDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6AB3DB205E3E9200008962 /* mainButtonDesign.swift */; };
 		BC9A2B0820561324005A2CA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A2B0720561324005A2CA3 /* AppDelegate.swift */; };
 		BC9A2B0A20561324005A2CA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A2B0920561324005A2CA3 /* ViewController.swift */; };
 		BC9A2B0D20561324005A2CA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC9A2B0B20561324005A2CA3 /* Main.storyboard */; };
@@ -25,9 +27,11 @@
 		53A6CB88402DC231E7E2EB85 /* Pods_portScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_portScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D4E47E4D762BF60CCF4DFD /* Pods-portScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-portScanner.release.xcconfig"; path = "Pods/Target Support Files/Pods-portScanner/Pods-portScanner.release.xcconfig"; sourceTree = "<group>"; };
 		BC4C0FF8205614490020B812 /* MyPorts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPorts.swift; sourceTree = "<group>"; };
-		BC52A92B205753E700FE072A /* Terminal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terminal.swift; sourceTree = "<group>"; };
+		BC52A92B205753E700FE072A /* terminal80.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = terminal80.swift; sourceTree = "<group>"; };
 		BC52A92D20575B9000FE072A /* TextViewDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewDesign.swift; sourceTree = "<group>"; };
 		BC52A92F20575D1F00FE072A /* ViewDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDesign.swift; sourceTree = "<group>"; };
+		BC60F26B205E48E900600138 /* terminal22.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = terminal22.swift; sourceTree = "<group>"; };
+		BC6AB3DB205E3E9200008962 /* mainButtonDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainButtonDesign.swift; sourceTree = "<group>"; };
 		BC9A2B0420561324005A2CA3 /* portScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = portScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9A2B0720561324005A2CA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC9A2B0920561324005A2CA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,9 +95,11 @@
 				BC9A2B0720561324005A2CA3 /* AppDelegate.swift */,
 				BC9A2B0920561324005A2CA3 /* ViewController.swift */,
 				BC9A2B0B20561324005A2CA3 /* Main.storyboard */,
+				BC60F26B205E48E900600138 /* terminal22.swift */,
+				BC6AB3DB205E3E9200008962 /* mainButtonDesign.swift */,
 				BC52A92D20575B9000FE072A /* TextViewDesign.swift */,
 				BC52A92F20575D1F00FE072A /* ViewDesign.swift */,
-				BC52A92B205753E700FE072A /* Terminal.swift */,
+				BC52A92B205753E700FE072A /* terminal80.swift */,
 				BC4C0FF8205614490020B812 /* MyPorts.swift */,
 				BC9A2B1120561324005A2CA3 /* Assets.xcassets */,
 				BC9A2B1320561324005A2CA3 /* LaunchScreen.storyboard */,
@@ -233,12 +239,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC9A2B1020561324005A2CA3 /* portScanner.xcdatamodeld in Sources */,
-				BC52A92C205753E700FE072A /* Terminal.swift in Sources */,
+				BC52A92C205753E700FE072A /* terminal80.swift in Sources */,
 				BC9A2B0A20561324005A2CA3 /* ViewController.swift in Sources */,
 				BC52A92E20575B9000FE072A /* TextViewDesign.swift in Sources */,
+				BC6AB3DC205E3E9200008962 /* mainButtonDesign.swift in Sources */,
 				BC52A93020575D1F00FE072A /* ViewDesign.swift in Sources */,
 				BC4C0FF9205614490020B812 /* MyPorts.swift in Sources */,
 				BC9A2B0820561324005A2CA3 /* AppDelegate.swift in Sources */,
+				BC60F26C205E48E900600138 /* terminal22.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

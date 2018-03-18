@@ -69,7 +69,7 @@ class ViewController: UIViewController {
                 
                 for port in segment {
                     let client = TCPClient(address: address, port: Int32(port))
-                    switch client.connect(timeout: 2) {
+                    switch client.connect(timeout: 1) {
                         case .success:
                             openPorts.append(port)
                         case .failure(_):
@@ -96,9 +96,14 @@ class ViewController: UIViewController {
             address: address, minPort: start, maxPort: stop, segmentsQueues:
             getSegmentsQueues(min:max:maxPerSegment:))
         
+        if openPorts.count > 0 {
+            performSegue(withIdentifier: "showTable", sender: nil)
+            UserDefaults.standard.set(openPorts, forKey: "ActivePorts")
+        } else {
+            displayAlert(title: "💩 Nada de nada", msg: "No se encontraron puertos disponibles.")
+        }
         
-        performSegue(withIdentifier: "showTable", sender: nil)
-        UserDefaults.standard.set(openPorts, forKey: "ActivePorts")
+        
 //        performSegue(withIdentifier: "showTable", sender: nil)
     }
     
@@ -113,22 +118,22 @@ class ViewController: UIViewController {
     
     
     @IBAction func scan(_ sender: Any) {
-        if let address = addressTxt.text {
+        if let address = addressTxt.text, address != "" {
             if let start : Int = Int(startPortTxt.text!) {
                 if let stop : Int = Int(stopPortTxt.text!) {
                     if start < stop {
                         scanPorts(address: address, start: start, stop: stop)
                     } else {
-                        displayAlert(title: "Error en el rango", msg: "Ingresa un rango válido")
+                        displayAlert(title: "🙅‍♀️ Error en el rango", msg: "Ingresa un rango válido")
                     }
                 } else {
-                    displayAlert(title: "Campos vacíos", msg: "Ingresa todos los datos necesarios.")
+                    displayAlert(title: "👀 Campos vacíos", msg: "Ingresa todos los datos necesarios.")
                 }
             }else {
-                displayAlert(title: "Campos vacíos", msg: "Ingresa todos los datos necesarios.")
+                displayAlert(title: "👀 Campos vacíos", msg: "Ingresa todos los datos necesarios.")
             }
         }else {
-            displayAlert(title: "Campos vacíos", msg: "Ingresa todos los datos necesarios.")
+            displayAlert(title: "👀 Campos vacíos", msg: "Ingresa todos los datos necesarios.")
         }
         
     }

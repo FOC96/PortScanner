@@ -62,10 +62,23 @@ class MyPorts: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedPort = Int(availablePorts[indexPath.row])
-        performSegue(withIdentifier: "showTerminal", sender: nil)
+        if selectedPort == 22 {
+            //SSH
+            performSegue(withIdentifier: "22Terminal", sender: nil)
+        } else if selectedPort == 80 {
+            //HTTP
+            performSegue(withIdentifier: "80Terminal", sender: nil)
+        } else {
+            displayAlert(title: "🙄 Oops", msg: "No hay una consola disponible para este puerto.")
+        }
+        
     }
 
-    
+    func displayAlert(title : String, msg : String) {
+        let alert = UIAlertController(title: title, message: msg, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
     
     
     
