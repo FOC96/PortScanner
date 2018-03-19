@@ -1,12 +1,19 @@
 PODS:
+  - SwiftSH (0.1.0):
+    - SwiftSH/Libssh2 (= 0.1.0)
+  - SwiftSH/Core (0.1.0)
+  - SwiftSH/Libssh2 (0.1.0):
+    - SwiftSH/Core
   - SwiftSocket (2.0.2)
 
 DEPENDENCIES:
+  - SwiftSH
   - SwiftSocket
 
 SPEC CHECKSUMS:
+  SwiftSH: bcbe8826153604f6923baf3e0b612bd186e153af
   SwiftSocket: 6f4c9c63fbc5c1d61188936bb3c599fd546f40ae
 
-PODFILE CHECKSUM: dbb5f110852071130152da86a5c17d8134cf76d7
+PODFILE CHECKSUM: 83f786e2d6c387c8bfdec540c1e8cff8c58cb266
 
 COCOAPODS: 1.4.0

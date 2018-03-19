@@ -214,10 +214,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Enviar"/>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Hello" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NdH-80-eGE">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NdH-80-eGE">
                                 <rect key="frame" x="16" y="64" width="343" height="508"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -238,6 +238,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vqM-Cc-2vf"/>
                     </view>
+                    <connections>
+                        <outlet property="consoleText" destination="NdH-80-eGE" id="kUX-qM-9hJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cKp-g3-nhH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -306,7 +309,7 @@
                                     <constraint firstAttribute="height" constant="87" id="r7T-Su-JSG"/>
                                 </constraints>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Hola" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qll-8Q-fzN">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qll-8Q-fzN">
                                 <rect key="frame" x="16" y="64" width="343" height="508"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
