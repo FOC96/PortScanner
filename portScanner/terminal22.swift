@@ -57,7 +57,7 @@ class terminal22: UIViewController {
             }
         
         shell?.connect({ (error) in
-            print(error?.localizedDescription)
+            print(String(describing: error))
         })
         shell?.authenticate(.byPassword(username: user, password: pass))
         shell?.open({ (error) in
