@@ -13,10 +13,14 @@ class terminal22: UIViewController {
     
     @IBOutlet weak var consoleText: UITextView!
     let shell = Shell(host: addressGlobal, port: 22)
-    
+    @IBOutlet weak var commandText: TextViewDesign!
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+//        NotificationCenter.default.addObserver(self, selector: #selector(terminal22.moveKeyboardUp), name: NSNotification.Name, object: nil)
+        
         shell?.connect({ (error) in
             if (self.shell?.connected)! {
                 self.askForAuth()
@@ -74,32 +78,26 @@ class terminal22: UIViewController {
                 self.askForAuth()
             }
         })
-//        shell?.withCallback { (string: String?, error: String?) in
-//            print("\(string ?? error!)")
-//            }
-//
-//        shell?.connect({ (error) in
-//            print(String(describing: error))
-//        })
-//        shell?.authenticate(.byPassword(username: user, password: pass))
-//        shell?.open({ (error) in
-//            if (self.shell?.authenticated)! {
-//                self.showInTextView(string: "Opening the channel...")
-//                self.showInTextView(string: "Opening the shell...")
-//                self.showInTextView(string: "Shell opened successfully 🎉")
-//            }
-//        })
-//
-//        var res = self.shell?.authenticated as! Bool
-//
-//        print(res)
-//
-//        if res {
-//            print("SUCCESS")
-//        } else {
-//            self.askForAuth()
-//        }
     }
+    
+    
+    @IBAction func sendButton(_ sender: Any) {
+        hideKeyboard()
+        if let command = commandText.text, command != "" {
+            shell?.write("\(command)\n", completion: { (error) in
+                if let error = error {
+                    self.showInTextView(string: String(describing: error))
+                } else {
+                    self.showInTextView(string: command)
+                }
+            })
+        }
+        
+        commandText.text = ""
+    }
+    
+    
+    
     
     
     func showInTextView(string : String) {
@@ -125,6 +123,25 @@ class terminal22: UIViewController {
             }
         }
     }
+    
+    func moveKeyboardUp() {
+//        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+//            if self.view.frame.origin.y == 0{
+//                self.view.frame.origin.y -= keyboardSize.height
+//            }
+//        }
+    }
+    
+    
+    func hideKeyboard() {
+        self.view.endEditing(true)
+//        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+//            if self.view.frame.origin.y != 0{
+//                self.view.frame.origin.y += keyboardSize.height
+//            }
+//        }
+    }
+    
     /*
     // MARK: - Navigation
 
