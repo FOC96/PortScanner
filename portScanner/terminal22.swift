@@ -17,7 +17,13 @@ class terminal22: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        askForAuth()
+        shell?.connect({ (error) in
+            if (self.shell?.connected)! {
+                self.askForAuth()
+            } else {
+                self.showInTextView(string: "💩 \(String(describing: error))")
+            }
+        })
         // Do any additional setup after loading the view.
     }
 
@@ -52,31 +58,47 @@ class terminal22: UIViewController {
     }
     
     func checkCredentials(user: String, pass: String) {
-        shell?.withCallback { (string: String?, error: String?) in
-            print("\(string ?? error!)")
-            }
-        
-        shell?.connect({ (error) in
-            print(String(describing: error))
-        })
-        shell?.authenticate(.byPassword(username: user, password: pass))
-        shell?.open({ (error) in
+        self.shell?.authenticate(AuthenticationChallenge.byPassword(username: user, password: pass), completion: { (newError) in
             if (self.shell?.authenticated)! {
-                self.showInTextView(string: "Opening the channel...")
-                self.showInTextView(string: "Opening the shell...")
-                self.showInTextView(string: "Shell opened successfully 🎉")
+                self.shell?.open({ (openError) in
+                    if openError == nil {
+                        self.showInTextView(string: "Opening the channel...")
+                        self.showInTextView(string: "Opening the shell...")
+                        self.showInTextView(string: "Shell opened successfully 🎉")
+                    } else {
+                        self.showInTextView(string: "💩 OPEN SHELL \(String(describing: openError))")
+                    }
+                })
+            } else {
+                self.showInTextView(string: "💩 AUTH \(String(describing: newError))")
+                self.askForAuth()
             }
         })
-
-        var res = self.shell?.authenticated as! Bool
-        
-        print(res)
-        
-        if res {
-            print("SUCCESS")
-        } else {
-            self.askForAuth()
-        }
+//        shell?.withCallback { (string: String?, error: String?) in
+//            print("\(string ?? error!)")
+//            }
+//
+//        shell?.connect({ (error) in
+//            print(String(describing: error))
+//        })
+//        shell?.authenticate(.byPassword(username: user, password: pass))
+//        shell?.open({ (error) in
+//            if (self.shell?.authenticated)! {
+//                self.showInTextView(string: "Opening the channel...")
+//                self.showInTextView(string: "Opening the shell...")
+//                self.showInTextView(string: "Shell opened successfully 🎉")
+//            }
+//        })
+//
+//        var res = self.shell?.authenticated as! Bool
+//
+//        print(res)
+//
+//        if res {
+//            print("SUCCESS")
+//        } else {
+//            self.askForAuth()
+//        }
     }
     
     
