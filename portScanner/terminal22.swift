@@ -69,6 +69,8 @@ class terminal22: UIViewController {
                         self.showInTextView(string: "Opening the channel...")
                         self.showInTextView(string: "Opening the shell...")
                         self.showInTextView(string: "Shell opened successfully 🎉")
+                        NotificationCenter.default.addObserver(self, selector: #selector(terminal22.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+                        NotificationCenter.default.addObserver(self, selector: #selector(terminal22.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
                     } else {
                         self.showInTextView(string: "💩 OPEN SHELL \(String(describing: openError))")
                     }
@@ -124,22 +126,28 @@ class terminal22: UIViewController {
         }
     }
     
-    func moveKeyboardUp() {
-//        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-//            if self.view.frame.origin.y == 0{
-//                self.view.frame.origin.y -= keyboardSize.height
-//            }
-//        }
+
+    //Moves the view up when keyboard is displayed
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0{
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+    
+    //Moves the view down when keyboard is hiden
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y != 0{
+                self.view.frame.origin.y += keyboardSize.height
+            }
+        }
     }
     
     
-    func hideKeyboard() {
+    @objc func hideKeyboard() {
         self.view.endEditing(true)
-//        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-//            if self.view.frame.origin.y != 0{
-//                self.view.frame.origin.y += keyboardSize.height
-//            }
-//        }
     }
     
     /*
