@@ -157,6 +157,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="1Or-gO-Yuv" kind="show" identifier="3306Terminal" id="O4j-pa-Kjl"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="8he-At-sjH">
                                 <rect key="frame" x="0.0" y="116" width="375" height="44"/>
@@ -213,6 +216,9 @@
                                 <rect key="frame" x="314" y="604" width="45" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Enviar"/>
+                                <connections>
+                                    <action selector="sendButton:" destination="hJs-U8-XBU" eventType="touchUpInside" id="rM3-Xs-Hu4"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NdH-80-eGE">
                                 <rect key="frame" x="16" y="64" width="343" height="508"/>
@@ -239,6 +245,7 @@
                         <viewLayoutGuide key="safeArea" id="vqM-Cc-2vf"/>
                     </view>
                     <connections>
+                        <outlet property="commandText" destination="8xm-xL-bcg" id="Qn1-KV-h4c"/>
                         <outlet property="consoleText" destination="NdH-80-eGE" id="kUX-qM-9hJ"/>
                     </connections>
                 </viewController>
@@ -246,10 +253,10 @@
             </objects>
             <point key="canvasLocation" x="1456.5" y="40.5"/>
         </scene>
-        <!--View Controller-->
+        <!--3306-->
         <scene sceneID="gmk-Ct-d0U">
             <objects>
-                <viewController id="1Or-gO-Yuv" sceneMemberID="viewController">
+                <viewController title="3306" id="1Or-gO-Yuv" customClass="Terminal3306" customModule="portScanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nUx-Kj-Hls">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -275,24 +282,73 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Enviar"/>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vBW-uH-Wvd" customClass="ViewDesign" customModule="portScanner" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="580" width="375" height="87"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="js5-Ue-YPA"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gvr-h3-hpE" customClass="TextViewDesign" customModule="portScanner" customModuleProvider="target">
+                                <rect key="frame" x="16" y="593" width="286" height="54"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="z1c-Qc-qkM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="InF-Qn-BWv">
+                                <rect key="frame" x="314" y="604" width="45" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Enviar"/>
+                                <connections>
+                                    <action selector="enviarMensaje:" destination="1Or-gO-Yuv" eventType="touchUpInside" id="pfY-5T-NX0"/>
+                                    <action selector="sendButton:" destination="hJs-U8-XBU" eventType="touchUpInside" id="uYd-TM-osQ"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4P9-o5-sx4">
+                                <rect key="frame" x="16" y="64" width="343" height="508"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="vBW-uH-Wvd" firstAttribute="leading" secondItem="3vD-iU-dsv" secondAttribute="leading" id="1w4-a4-b4U"/>
                             <constraint firstItem="beY-Wt-g8J" firstAttribute="centerY" secondItem="u2w-qB-Rnb" secondAttribute="centerY" id="2lj-BU-LiD"/>
+                            <constraint firstItem="InF-Qn-BWv" firstAttribute="centerY" secondItem="gvr-h3-hpE" secondAttribute="centerY" id="2tS-3d-eqf"/>
+                            <constraint firstItem="InF-Qn-BWv" firstAttribute="leading" secondItem="gvr-h3-hpE" secondAttribute="trailing" constant="12" id="3Fc-MF-CA0"/>
+                            <constraint firstItem="vBW-uH-Wvd" firstAttribute="top" secondItem="3vD-iU-dsv" secondAttribute="top" id="3NV-Bh-MGX"/>
                             <constraint firstAttribute="bottom" secondItem="u2w-qB-Rnb" secondAttribute="bottom" constant="20" symbolic="YES" id="56L-NB-Zno"/>
+                            <constraint firstItem="vBW-uH-Wvd" firstAttribute="centerX" secondItem="4P9-o5-sx4" secondAttribute="centerX" id="5fd-Em-f8k"/>
+                            <constraint firstItem="vBW-uH-Wvd" firstAttribute="top" secondItem="4P9-o5-sx4" secondAttribute="bottom" constant="8" symbolic="YES" id="5zD-KR-eCb"/>
+                            <constraint firstItem="4P9-o5-sx4" firstAttribute="top" secondItem="Azn-Ck-2sZ" secondAttribute="top" id="8qN-G3-wEz"/>
+                            <constraint firstItem="vBW-uH-Wvd" firstAttribute="trailing" secondItem="3vD-iU-dsv" secondAttribute="trailing" id="EK0-79-oGk"/>
                             <constraint firstItem="3vD-iU-dsv" firstAttribute="bottom" secondItem="Azn-Ck-2sZ" secondAttribute="bottom" id="HWZ-p9-sxm"/>
                             <constraint firstItem="beY-Wt-g8J" firstAttribute="trailing" secondItem="nUx-Kj-Hls" secondAttribute="trailingMargin" id="IIU-uC-2u8"/>
+                            <constraint firstItem="gvr-h3-hpE" firstAttribute="top" secondItem="4P9-o5-sx4" secondAttribute="bottom" constant="21" id="JDl-GE-QwM"/>
                             <constraint firstItem="beY-Wt-g8J" firstAttribute="leading" secondItem="u2w-qB-Rnb" secondAttribute="trailing" constant="12" id="LPk-pv-Mgl"/>
+                            <constraint firstItem="gvr-h3-hpE" firstAttribute="leading" secondItem="u2w-qB-Rnb" secondAttribute="leading" id="Sb1-fd-Z2l"/>
+                            <constraint firstItem="gvr-h3-hpE" firstAttribute="leading" secondItem="4P9-o5-sx4" secondAttribute="leading" id="evT-Q8-EQ6"/>
+                            <constraint firstItem="vBW-uH-Wvd" firstAttribute="top" secondItem="4P9-o5-sx4" secondAttribute="bottom" constant="8" id="iHR-ce-fc5"/>
+                            <constraint firstItem="gvr-h3-hpE" firstAttribute="trailing" secondItem="u2w-qB-Rnb" secondAttribute="trailing" id="q8h-OT-bCP"/>
                             <constraint firstItem="3vD-iU-dsv" firstAttribute="leading" secondItem="nUx-Kj-Hls" secondAttribute="leading" id="uFa-D4-DxI"/>
+                            <constraint firstItem="vBW-uH-Wvd" firstAttribute="top" secondItem="4P9-o5-sx4" secondAttribute="bottom" constant="8" id="wFo-x4-E5s"/>
                             <constraint firstItem="u2w-qB-Rnb" firstAttribute="leading" secondItem="nUx-Kj-Hls" secondAttribute="leadingMargin" id="xVp-Fd-iPI"/>
                             <constraint firstAttribute="trailing" secondItem="3vD-iU-dsv" secondAttribute="trailing" id="xt8-2L-CON"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Azn-Ck-2sZ"/>
                     </view>
+                    <connections>
+                        <outlet property="consoleText" destination="4P9-o5-sx4" id="qo5-YX-Fot"/>
+                        <outlet property="mensajeText" destination="gvr-h3-hpE" id="K0Y-8L-qgc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SJK-m6-cc7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1457" y="784"/>
+            <point key="canvasLocation" x="1457" y="892"/>
         </scene>
         <!--HTTP (80)-->
         <scene sceneID="vZS-uc-cHU">

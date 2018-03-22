@@ -68,6 +68,9 @@ class MyPorts: UITableViewController {
         } else if selectedPort == 80 {
             //HTTP
             performSegue(withIdentifier: "80Terminal", sender: nil)
+        } else if selectedPort == 3306 {
+            //MySQL
+            performSegue(withIdentifier: "3306Terminal", sender: nil)
         } else {
             displayAlert(title: "🙄 Oops", msg: "No hay una consola disponible para este puerto.")
         }

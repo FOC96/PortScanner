@@ -20,6 +20,7 @@
 		BC9A2B1020561324005A2CA3 /* portScanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC9A2B0E20561324005A2CA3 /* portScanner.xcdatamodeld */; };
 		BC9A2B1220561324005A2CA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC9A2B1120561324005A2CA3 /* Assets.xcassets */; };
 		BC9A2B1520561324005A2CA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC9A2B1320561324005A2CA3 /* LaunchScreen.storyboard */; };
+		BCE661DC2063142E00ADAC09 /* Terminal3306.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE661DB2063142E00ADAC09 /* Terminal3306.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		BC9A2B1120561324005A2CA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC9A2B1420561324005A2CA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC9A2B1620561324005A2CA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCE661DB2063142E00ADAC09 /* Terminal3306.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Terminal3306.swift; path = portScanner/Terminal3306.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		BC9A2AFB20561324005A2CA3 = {
 			isa = PBXGroup;
 			children = (
+				BCE661DB2063142E00ADAC09 /* Terminal3306.swift */,
 				BC9A2B0620561324005A2CA3 /* portScanner */,
 				BC9A2B0520561324005A2CA3 /* Products */,
 				54896F7C69C2ED1679FB4AA6 /* Pods */,
@@ -243,6 +246,7 @@
 				BC9A2B1020561324005A2CA3 /* portScanner.xcdatamodeld in Sources */,
 				BC52A92C205753E700FE072A /* terminal80.swift in Sources */,
 				BC9A2B0A20561324005A2CA3 /* ViewController.swift in Sources */,
+				BCE661DC2063142E00ADAC09 /* Terminal3306.swift in Sources */,
 				BC52A92E20575B9000FE072A /* TextViewDesign.swift in Sources */,
 				BC6AB3DC205E3E9200008962 /* mainButtonDesign.swift in Sources */,
 				BC52A93020575D1F00FE072A /* ViewDesign.swift in Sources */,

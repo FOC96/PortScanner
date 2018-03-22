@@ -13,11 +13,21 @@ class terminal22: UIViewController {
     
     @IBOutlet weak var consoleText: UITextView!
     let shell = Shell(host: addressGlobal, port: 22)
-    
+    @IBOutlet weak var commandText: TextViewDesign!
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        askForAuth()
+//        NotificationCenter.default.addObserver(self, selector: #selector(terminal22.moveKeyboardUp), name: NSNotification.Name, object: nil)
+        
+        shell?.connect({ (error) in
+            if (self.shell?.connected)! {
+                self.askForAuth()
+            } else {
+                self.showInTextView(string: "💩 \(String(describing: error))")
+            }
+        })
         // Do any additional setup after loading the view.
     }
 
@@ -52,32 +62,44 @@ class terminal22: UIViewController {
     }
     
     func checkCredentials(user: String, pass: String) {
-        shell?.withCallback { (string: String?, error: String?) in
-            print("\(string ?? error!)")
-            }
-        
-        shell?.connect({ (error) in
-            print(String(describing: error))
-        })
-        shell?.authenticate(.byPassword(username: user, password: pass))
-        shell?.open({ (error) in
+        self.shell?.authenticate(AuthenticationChallenge.byPassword(username: user, password: pass), completion: { (newError) in
             if (self.shell?.authenticated)! {
-                self.showInTextView(string: "Opening the channel...")
-                self.showInTextView(string: "Opening the shell...")
-                self.showInTextView(string: "Shell opened successfully 🎉")
+                self.shell?.open({ (openError) in
+                    if openError == nil {
+                        self.showInTextView(string: "Opening the channel...")
+                        self.showInTextView(string: "Opening the shell...")
+                        self.showInTextView(string: "Shell opened successfully 🎉")
+                        NotificationCenter.default.addObserver(self, selector: #selector(terminal22.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+                        NotificationCenter.default.addObserver(self, selector: #selector(terminal22.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+                    } else {
+                        self.showInTextView(string: "💩 OPEN SHELL \(String(describing: openError))")
+                    }
+                })
+            } else {
+                self.showInTextView(string: "💩 AUTH \(String(describing: newError))")
+                self.askForAuth()
             }
         })
-
-        var res = self.shell?.authenticated as! Bool
-        
-        print(res)
-        
-        if res {
-            print("SUCCESS")
-        } else {
-            self.askForAuth()
-        }
     }
+    
+    
+    @IBAction func sendButton(_ sender: Any) {
+        hideKeyboard()
+        if let command = commandText.text, command != "" {
+            shell?.write("\(command)\n", completion: { (error) in
+                if let error = error {
+                    self.showInTextView(string: String(describing: error))
+                } else {
+                    self.showInTextView(string: command)
+                }
+            })
+        }
+        
+        commandText.text = ""
+    }
+    
+    
+    
     
     
     func showInTextView(string : String) {
@@ -103,6 +125,31 @@ class terminal22: UIViewController {
             }
         }
     }
+    
+
+    //Moves the view up when keyboard is displayed
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0{
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+    
+    //Moves the view down when keyboard is hiden
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y != 0{
+                self.view.frame.origin.y += keyboardSize.height
+            }
+        }
+    }
+    
+    
+    @objc func hideKeyboard() {
+        self.view.endEditing(true)
+    }
+    
     /*
     // MARK: - Navigation
 
