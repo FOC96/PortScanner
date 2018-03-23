@@ -190,13 +190,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-portScanner/Pods-portScanner-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/MySqlSwiftNative/MySqlSwiftNative.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftSH/SwiftSH.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftSocket/SwiftSocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MySqlSwiftNative.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSH.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSocket.framework",
 			);
