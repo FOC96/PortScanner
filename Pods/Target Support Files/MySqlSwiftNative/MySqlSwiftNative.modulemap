@@ -1,0 +1,6 @@
+framework module MySqlSwiftNative {
+  umbrella header "MySqlSwiftNative-umbrella.h"
+
+  export *
+  module * { export * }
+}
