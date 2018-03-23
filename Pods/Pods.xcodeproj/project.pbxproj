@@ -7,189 +7,391 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06DC88335B574970AF51ECE0B5F1A27D /* TCPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC02652AEB15D9390766201500B7F98 /* TCPClient.swift */; };
-		0E0DFECF0EAB6A4917FAB495734A1E82 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E41A64A3308BEC6F0599A4DC04992 /* Extensions.swift */; };
-		19C0220A207CD14EF4FB11261C4B0EF7 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4498793BE1441C11C93DD6F373D18A /* Statement.swift */; };
-		1B00333B495E1A22277A091101D5C051 /* Libssh2.h in Headers */ = {isa = PBXBuildFile; fileRef = 41438E02B113585242882EB6DA46D5C0 /* Libssh2.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		224AC7A4A50059A49AA0BC065EEA14C7 /* Pods-portScanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA94C075E17CEC7A3F8807F01AF3B316 /* Pods-portScanner-dummy.m */; };
-		259A8D90846B79121FD6361353B922C3 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00E79538743DDDA8FFC7D44ED596EF7 /* Error.swift */; };
-		2EBBDF399EDBF4402A8A2091735A0BA8 /* SwiftSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB56011E571C7A8B93223BF8667A642 /* SwiftSocket-dummy.m */; };
-		2EEE60BA337BE16FAF55C38417337333 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E513B0F94EC0A606A03983093082E8 /* Utils.swift */; };
-		36F5F9C1A7E3F3DE16D9F6E6E4BEBF62 /* mysql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9DC207B5E9589B287C6D8ACBB81456 /* mysql.swift */; };
-		3BB96F83DF0CB780A32AF77BD86B7347 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		45B0DD253A0DF8F3F36987758EADB29C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		4636D87C0535940062AD494B36CA2495 /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 8857D74284059F2C332D9100DC759F39 /* ytcpsocket.c */; };
-		4958B2E3EFE1AD082D58192BCA4B2BA0 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA9938614486BC07A6E9D40AC6D0FD6 /* Command.swift */; };
-		572870565125854A402386CA61946964 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34AA8EE3FB543285A6FC18E31619D7 /* Functions.swift */; };
-		599E0A24A91A9E31C1144BA837DB88BA /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE933378E932913B2D0EDC4BD28EF10 /* Socket.swift */; };
-		61BB2F279384A9D9056FB0BDC39EC1E5 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C729B8B848B1DEE8CC6C084CC559AEB /* Queue.swift */; };
-		65799C7DD8A6164DF0B036E5100EEDF8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD15D5F4B91F7D5C939AE8DD9D076F1A /* Result.swift */; };
-		6D8154755E77C9BA3753185C978E9B82 /* Packets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7B46C3B9DBD7CDA9E45C6AD8BCDEF7 /* Packets.swift */; };
-		7022B477377C148C0BE4BB749416708A /* Pods-portScanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B04D3DD5F64C259B581183CC7D56DCBC /* Pods-portScanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		72629ECC0A2DE1B2DF83729F455A3DA0 /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E64525D534ADE131249606A584C5DB /* Shell.swift */; };
-		76D664F4637028E420ECA7F2575FF508 /* Libssh2.m in Sources */ = {isa = PBXBuildFile; fileRef = A93CB3C0667F37D69299D1A97D1E1BD3 /* Libssh2.m */; };
-		7F706708B27241D11CB57728A9B5D7DA /* SwiftSH-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2637B5F0C89B452BE541B669071A2613 /* SwiftSH-dummy.m */; };
-		802E4EAD230267FCE853B4FF1D5DB451 /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D86602BB2699A02670403EAE090B89C /* yudpsocket.c */; };
-		832B33EFA28E8C46020CF555E0DD07FF /* UDPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4B9B0F3F0C15E77DCF5C7CB81749A9 /* UDPClient.swift */; };
-		83785159BF1ED0BEBABF09973EF54DED /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A60717C509681F0F765045333EB7AE /* Result.swift */; };
-		96E3E08DAEE8AF2B0098B47F54639E3B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4FDDD68D9606E74ACB1A33E3FD0764 /* main.swift */; };
-		96FAFD824BD5CD5BBCCD61A42532AFDE /* SFTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0CFE939D25B4CC085857923ECE5BB9 /* SFTP.swift */; };
-		9AE8CBD5688E8EB2D53FC17A03E85CEC /* SwiftSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5655D98B34E6D4FB11448F14802032A /* SwiftSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A081347541F45A968D8F5961E7B9E81C /* MySqlSwiftNative-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0363FAC3DF47199FAEB75598F48292E /* MySqlSwiftNative-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A604331582ABA993D62324433E564927 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE956B468A6D9CEB9D2B53D6A88387F /* Connection.swift */; };
-		AA54B4F30633FAB103029B0A4597303E /* tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C49188EE6143CC7198033DC124F2D /* tests.swift */; };
-		ABBDE29959CC25F99EEF2864E35AD73C /* MySqlSwiftNative-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E30B84B5D222B036B0202ACEC943D86B /* MySqlSwiftNative-dummy.m */; };
-		B0E44D2A1661D7C371EFA477E3119903 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7893DC19DB62C55067AAE4F909F70FF9 /* Socket.swift */; };
-		B55F0399AEE25ACCEFE2E014BEF36433 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6820BA38C95DA055501EED1D1072FB /* Query.swift */; };
-		B7351874243A6EF75A7F8DF7C625472E /* ConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EB8CF61ED983719D897FF5511E0F7 /* ConsoleLogger.swift */; };
-		B937A53E186082945165694BB4DDA370 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F695A4A7D8E45C361DBCF0BBB11344E0 /* Constants.swift */; };
-		B9B2002B65D43C4AC79626A17633F461 /* DNS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C954DF95748739DD10A9934311F22011 /* DNS.swift */; };
-		BAEC9CD6E7F3A1E46D6E88BF36A70C6B /* SCP.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE21CC882F83AA4F86A8B2B115C5FE13 /* SCP.swift */; };
-		C45856279664714E2DC86301DD22608F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		D7F8D2562BE053E5FD62A2C6FC72C090 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BFE965F863EA303CDF5A4FC7128B61 /* Logger.swift */; };
-		D9625CA9BB6F04E8AC5DD66CC8EDBDE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		D9CB900008B43B8C269BFD7B3BE3DE45 /* Libssh2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17B2523A208A312EE7A2DAFB5C62255 /* Libssh2.swift */; };
-		DA265DCEE92374387FA433DC1BF8E3D7 /* SSHLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E074732D2042B4026649AFC18E515FA1 /* SSHLibrary.swift */; };
-		DC7501921E03D923ED6F276ABAFEDF34 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5BF5794094FAA5B1A35377C000E469 /* Table.swift */; };
-		E4F31D26EF46E911C2C2BE81EA9FD269 /* SwiftSH-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C2E504D136BE53ABDA43914C1AFB33D /* SwiftSH-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EDC25A52F640DA0384C2C1DA042BEB83 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5630B62772AB42D910EF192A472EE31D /* Session.swift */; };
-		F262B90C3D399626DA25885D7BA60120 /* sha1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403EC04B96CB3FAA024D08C8FE3DF41D /* sha1.swift */; };
-		FE91216AEC85F1FFD75547224594D5D1 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE16CED7D883AF5F3309F9EFD833797 /* Channel.swift */; };
+		01FE9F0C1BB04CB5D86E5897309EB3D6 /* mysql_com_server.h in Headers */ = {isa = PBXBuildFile; fileRef = 69446B9D5D10D0529BF3E6B79CC05E54 /* mysql_com_server.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		03D1E8CB62A3BC21179638C1185F8CD2 /* psi.h in Headers */ = {isa = PBXBuildFile; fileRef = 1756E04DB84A1A434C88567300B4F2B7 /* psi.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0554C8CC426AB1665C516DA03AFE4D89 /* mysql_com.h in Headers */ = {isa = PBXBuildFile; fileRef = 313BBC7F48A8CE413342B7F50B672B71 /* mysql_com.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		06E5B546D0FAE3D50D20EF451BB06060 /* binary_log_types.h in Headers */ = {isa = PBXBuildFile; fileRef = D8DC1EB82552EA2AC8D178629E295501 /* binary_log_types.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		07AD4A51FFAB37A91E672A2FBD90BED6 /* OHMySQLQueryContext.h in Headers */ = {isa = PBXBuildFile; fileRef = F4DF7554EB09FFC62473B915BC919CCD /* OHMySQLQueryContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0994318A71CDB8CCCAE615479CD953B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		0A537E42282C9F6741D0E033FD716897 /* get_password.h in Headers */ = {isa = PBXBuildFile; fileRef = 910EE2E74F2333D9BCD85B6226243DF3 /* get_password.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0AFF80F57DAD28E77A2F0718DF1DBBAE /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BAA34064A95CA313BA37B2321A81E6 /* Socket.swift */; };
+		0B8257460578650B463900FFC6798EBE /* OHMySQLStoreCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 601EE26C4FBA3B1F5CD07447AA19F1B5 /* OHMySQLStoreCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BABE1072F6C2A3346F2F8C63318E9B7 /* sslopt-case.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FF4F07B3A89996AFBA165B54BE265E2 /* sslopt-case.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0F8EAF5C6FDB99DC372B5B777567FDDC /* OHResultErrorType.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D7C51C0702678D099C52F971DDC39D /* OHResultErrorType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10ED153409AE533F6FBF31D0A884C3FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		14550478EF81D67C7EC20ED90FEF17D5 /* NSString+OHSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 46412D447D5B5E2A0745B5FE228C3102 /* NSString+OHSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1602F2DC4CA09A1C0F65AA88306E95DC /* thr_mutex.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AFC673E65108EFA1F4A9BF5A2D6D223 /* thr_mutex.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		195E3CD0245A0F2B0823E138257CF86A /* my_dbug.h in Headers */ = {isa = PBXBuildFile; fileRef = 756DD8A932278335DA14926A47E818C8 /* my_dbug.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		198275E01662CFDAD4D69ACCC6496D72 /* my_dir.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB1B1231E698B767D049ED69CDCA5F3 /* my_dir.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1B2B12863535E17C0C4CAE2CE563CFB6 /* my_getopt.h in Headers */ = {isa = PBXBuildFile; fileRef = D5DF56D06A0F89BDE4F97367EC565D2D /* my_getopt.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1B624F574D1165D1C7D1BDD8A5F6AC17 /* mysql_transaction.h in Headers */ = {isa = PBXBuildFile; fileRef = DFDC5068F9166F01B752A8280224708C /* mysql_transaction.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1E53A693AA63BA32D825FF7903C83AFC /* OHMySQLSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BFE177D3D6DA42F410D7F3564E7223 /* OHMySQLSerialization.m */; };
+		1EC8B566DB96782ECB137EA05293EEA9 /* byte_order_generic.h in Headers */ = {isa = PBXBuildFile; fileRef = 0248AC4BB3DF0E1BB6B41AFC6D1E8FF2 /* byte_order_generic.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1F8229E85B3E470B00FCCEDA796ADE7E /* OHMySQL.h in Headers */ = {isa = PBXBuildFile; fileRef = AD9EB49A37F0776DC42726B4BF8EC743 /* OHMySQL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		225DB55AF4274C9AF5141237EC346672 /* sslopt-vars.h in Headers */ = {isa = PBXBuildFile; fileRef = 66EE9598108EA04494647A3E35FFE9BE /* sslopt-vars.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		22A4579569ADC6256311019CC2789B5A /* my_global.h in Headers */ = {isa = PBXBuildFile; fileRef = 60F172ACED9DEC69663C2E832FD91653 /* my_global.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		22F0A3CFD112B9ADD3347592D13A3155 /* mysql.h in Headers */ = {isa = PBXBuildFile; fileRef = 340F39DEDF63187D774203F925BCBEAB /* mysql.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2437A600FB0FEA5E498CF6AEAEA55D09 /* OHMySQL-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90682D72964737754DD14737E7CA72C8 /* OHMySQL-dummy.m */; };
+		25B4DD9B425EA2940E6EEBF63B6C99D3 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E25FED00F61DF7BA6CA75691D2FC8EB /* Session.swift */; };
+		26BF9AEDF6F7704C9C24A2D054AAA840 /* NSData+OHSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = F217F776ECEF89AC354B1CF32EE54BFE /* NSData+OHSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26FC040BF1776B6E64D731CC8B2D3E6A /* Libssh2.h in Headers */ = {isa = PBXBuildFile; fileRef = 083461235463ADE98A2CAEFB4D9270E0 /* Libssh2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27E273ACAD6D4F6D0A1CEB0B2C933780 /* mysql_embed.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C3D49F28F5CEB016FEE2DABD25507C /* mysql_embed.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2C6A0A388EF8C46730665A53C41D9C33 /* thr_cond.h in Headers */ = {isa = PBXBuildFile; fileRef = 73795F6620CE91B4AFF5B6E46F2524FC /* thr_cond.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2D3A0EE33388124F9EF98D494277D7E5 /* mysql_lex_string.h in Headers */ = {isa = PBXBuildFile; fileRef = D7B00038364F430D63743CFA9443CD42 /* mysql_lex_string.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2F525DE070CDF6C1490DDE7DF60404B8 /* NSString+Escaping.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBF8BD78C9415991CC7822D66469359 /* NSString+Escaping.m */; };
+		30018F8BD14FB307ECF8A52B8348A47E /* NSObject+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DD1D75CEDFA2E7922879F4B765F732 /* NSObject+Mapping.m */; };
+		307E07320B844C64DEFAE21C6D709255 /* psi_memory.h in Headers */ = {isa = PBXBuildFile; fileRef = A328EA91F1F3C3DB5343A2833615852B /* psi_memory.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		333AA01D8249FB3D8E569D7C8172083A /* SwiftSH-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F363141F4664935E1A1B2548371AE /* SwiftSH-dummy.m */; };
+		39C37E3B3E24AECEAB356C2A0D673AF7 /* keycache.h in Headers */ = {isa = PBXBuildFile; fileRef = D37FE381AC7BB563E8A37C552595B4B8 /* keycache.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3AAFBB37E1DC20674C9F7F8F0E057DB3 /* service_mysql_alloc.h in Headers */ = {isa = PBXBuildFile; fileRef = D6ADA8B967873F9E61B0A04EDC67432F /* service_mysql_alloc.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3CF28220F830BC6167734C4ECBDF7A98 /* m_string.h in Headers */ = {isa = PBXBuildFile; fileRef = 7094F8E3BE4586408207FE79AD4F208F /* m_string.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3D508B7919269C92B707833EA8D124A3 /* OHMySQLStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5191B5E01A9E5681EF7671771E21D8D4 /* OHMySQLStore.m */; };
+		4013BCEE91F7A50D8DB7421BC9094B30 /* ConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68716E7CB4A81BF713C27D9AF9B7DA3B /* ConsoleLogger.swift */; };
+		43300869AA748F652BEE49AEFDDAF256 /* mysql_time.h in Headers */ = {isa = PBXBuildFile; fileRef = D35FD7F901F97BB7BAFC7DD22C4B264A /* mysql_time.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		44D69E98C220DD318AF0B0E79DC46735 /* OHMySQLQueryRequestFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = E448027E7AA3FE625FB796A2C0CAE06B /* OHMySQLQueryRequestFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44E98C2D924067D31288125989E07548 /* NSNumber+OHSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD14DAFCF3FEE35E32CC5BD7119DB7 /* NSNumber+OHSerialization.m */; };
+		46C80D290F6A31E17866A125445A99BA /* OHJoinConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = F771F0472A89B9310DCE7C1834CA2BC3 /* OHJoinConstants.m */; };
+		46FAB709A7A04EF7062C3B06A72B0C8E /* my_thread_local.h in Headers */ = {isa = PBXBuildFile; fileRef = DE87040AEA3543FA006F22D4C48B1E80 /* my_thread_local.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4B4228596432D117D063BCDCF49457BD /* client_authentication.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B85406CBEFFD3AB0E0D1B7DD98809CC /* client_authentication.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4DA9E62A19F47B3FFA340C99D0CC9995 /* mysql_memory.h in Headers */ = {isa = PBXBuildFile; fileRef = 29C6DB56DDB87F021B5BB01A4E183865 /* mysql_memory.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4E570722F08D5970B87A84EB9D7D2DB9 /* client_plugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 16F5419658B6A9CE6309E544EFAB214A /* client_plugin.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		51B42EFC3011F05FA40DEA71E1CC28EC /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A00C76095E5CE404451680D7CA959 /* Functions.swift */; };
+		51EB6064F092E34FA8009BF1BFD122AE /* OHMySQLSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 5481B778117A6C138E3F2C1F0BC8A2B8 /* OHMySQLSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51FAD0C37D6FB59050D5609CCF0CAE03 /* SwiftSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C67C5D5C2C4D8A35CE5DFAB2C98A8DD /* SwiftSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56977CB61D81B0A77925FEF246AAFCA3 /* SwiftSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D583F9CA869AD4ACC641074EEACB33 /* SwiftSocket-dummy.m */; };
+		5C5DB046BF4839AD8BB0EA438A52C3DF /* UDPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DFC4F24B8BBBD5DECD0133C5B8E0D7 /* UDPClient.swift */; };
+		5CF5961D2E1DF2B42985BDDAB6CFCB0B /* OHRefreshOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D40D183FFFC638A2ADDE110DF2ECC1F /* OHRefreshOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E06CE951B36815F0E92380A007BE00C /* SFTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C22FB1A4FF6279CEC4D2DB88EED783 /* SFTP.swift */; };
+		60A27BBF3A0223EFDED92217E478F0B8 /* plugin_auth_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 341A75DEDF45338AFCD107E72968FF35 /* plugin_auth_common.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		62F560B5D2047A671475849D846FD2C7 /* OHMySQLContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 29D2883F2C4792729E551E8BBA672B7C /* OHMySQLContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64812A8AC1ACC6916832A7A3293E654C /* OHMySQLTimeline.h in Headers */ = {isa = PBXBuildFile; fileRef = 90283FCB98FF23CA0628C7A190DAFCEC /* OHMySQLTimeline.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B32B17C6569AB59D0FF7AD69BC0C732 /* byte_order_generic_x86.h in Headers */ = {isa = PBXBuildFile; fileRef = 327386DA7FFEE413B9C44C949A9B851E /* byte_order_generic_x86.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6BF4442450A5EEDB6C3DF0F313485EB2 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF5EEB6343F0561F536282722BE9806 /* Channel.swift */; };
+		6DC933371FF1FDAC1FF1DE6B101BACB1 /* NSNumber+OHSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = F78A2EE4662621EA4A3037699F3345BE /* NSNumber+OHSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E233BC291148B3A0DA014C0033FA2A9 /* plugin_trace.h in Headers */ = {isa = PBXBuildFile; fileRef = 85CF534632611887E632ED7B018BDD56 /* plugin_trace.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6FB8E79CF53E430A3BD9EBE8D5BA2949 /* sslopt-longopts.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CC6DD9417E16DB0183A014E19DC2598 /* sslopt-longopts.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7094814744873E82CE5ACCB1939F8581 /* OHMySQLTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A52D5CDDCF41984F15E67B96EC5434 /* OHMySQLTimeline.m */; };
+		70D113AA37F71B2A29D271A31495D2EA /* OHSSLConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = C175A839A22629E8388DB5191175256C /* OHSSLConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7170295E6A140157E5818808CB256926 /* NSData+OHSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D18482C16D111A3FA0FBDA051569CB7F /* NSData+OHSerialization.m */; };
+		7349E7433997D6144F61D21524B8AB93 /* OHMySQLStoreCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0402543B13202E870A49894AF467D29C /* OHMySQLStoreCoordinator.m */; };
+		740CC462BDF245031EAE18FC6D33F242 /* OHMySQLQueryContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 22697BDE11630D2DD3C7808EB884499C /* OHMySQLQueryContext.m */; };
+		75C538E59F2BB16135B5C9A38E70A0EF /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 993D8F78486442140FC9D01DD459F5F9 /* ytcpsocket.c */; };
+		760928FB3857964A7203DBCD99691927 /* Libssh2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5CD9813AEFC9E0DEA0BE52B1F50971 /* Libssh2.swift */; };
+		772BD1DFF2B28986ACC637F6FDF89806 /* TCPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5805A83B0B6869B5A86066BE2A1C3E /* TCPClient.swift */; };
+		77CCEC405ED6B034BF56F2F8F338ADA7 /* NSObject+Mapping.h in Headers */ = {isa = PBXBuildFile; fileRef = B13DB3F46A275FD2C4D15D1EC4F84901 /* NSObject+Mapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		782E66C0A519D63312596F399AEA8685 /* mysql_ps.h in Headers */ = {isa = PBXBuildFile; fileRef = B08DE2A5314A2953FA37278820D21A00 /* mysql_ps.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		78CE9BE9062F086FF56F3709CC2495E4 /* mysqld_error.h in Headers */ = {isa = PBXBuildFile; fileRef = 8498BC70C82817FC539F7E3DF598C0F1 /* mysqld_error.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		79F72D877A6E153664133CAE4AC455D4 /* OHProtocolType.h in Headers */ = {isa = PBXBuildFile; fileRef = C1AE1B27FF3B4727C689AD7DF99B550E /* OHProtocolType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D19E0DB556F3119278E837D52F5CCF0 /* mysql_sp.h in Headers */ = {isa = PBXBuildFile; fileRef = AF252574D52AD05F4229B5D2A3222B34 /* mysql_sp.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		81A7E8671B91DC958C11F0A5BCBD9EEF /* OHCharsetEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A43DFF5E2F3E42A0F1C07DE65291F54 /* OHCharsetEncoding.m */; };
+		823AE73103CEC1E4BD759AC32DEDA49D /* mysql_mdl.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E8F681B1BBE4896F10B2B792CAF55AF /* mysql_mdl.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		827F27032C67BD2A18413D47D22AA9A4 /* mysql_idle.h in Headers */ = {isa = PBXBuildFile; fileRef = D8D70F91FE19901B1347CE62ED67EC9B /* mysql_idle.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		87A6D45688DE259D28A9A2C5D35771E7 /* OHMySQLQueryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F9ADD7F4B5DE5A14A63BF7C7B7C1959B /* OHMySQLQueryRequest.m */; };
+		8A45FD79FB952CD868668C91FD812E49 /* OHMySQLQueryRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 119A7771047C069796627F691E61BF6B /* OHMySQLQueryRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BD43D5F7850A31B06FDED65FF914D8C /* mysqld_ername.h in Headers */ = {isa = PBXBuildFile; fileRef = 0899332D92AA49C55F916E9E0341153E /* mysqld_ername.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8EB881A34B0D6A6D082ECEE173CAC0B7 /* my_sys.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFA0BEC52227F3A91F272110BC709DB /* my_sys.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F8ED1F81E3D65F4CA284CB9CD0E18EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		904FC584472FBA1D475169B4D39CDADE /* OHMySQL-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9FD480FB11C65ABCABF3A6916EC0561 /* OHMySQL-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90B08209350F6ED952214367F5DF639C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123854C95DFE427BE22BA8BF894B6A73 /* Logger.swift */; };
+		92CD330984F0581D02651CDCB9CCD31A /* my_command.h in Headers */ = {isa = PBXBuildFile; fileRef = 7127A0192DD7A91B131C7460CDD5B9B9 /* my_command.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		931A029A3B91E7F1D811181D21461B13 /* Pods-portScanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B04D3DD5F64C259B581183CC7D56DCBC /* Pods-portScanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C2A4C5FF5131488312AC18F99F9C3A /* mysql_table.h in Headers */ = {isa = PBXBuildFile; fileRef = 94ED44ABF7A2C1E9BA1EF35043AA2075 /* mysql_table.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		969AEC10FF2758A6E9E0CB8FBC579F90 /* thr_rwlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 69477AE8ACBC6CB7BE5680860463E205 /* thr_rwlock.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9D1B33F450093E5525D783B7390CE0A4 /* big_endian.h in Headers */ = {isa = PBXBuildFile; fileRef = 74CBC15D9FB13708C89CE19D70512F2C /* big_endian.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9E0E6D45CCF88C0941D9D9007C4E47F1 /* SwiftSH-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CA9E207B847E5760D287E4A42D352E9 /* SwiftSH-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A11D9971A2A2AD980DB199BD108225CD /* OHLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AE9F984E5EF1CA0901305BFF0D5B77F /* OHLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3038135C967CB26427A816CB8F06E2F /* NSString+Escaping.h in Headers */ = {isa = PBXBuildFile; fileRef = FBB085F8AE946563A8E068D6AE6CB2BB /* NSString+Escaping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A748BF1EA6C2259B6F344225C95B37E7 /* my_byteorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DDA5CDD0A1145BAF29E58AD31CB758A /* my_byteorder.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A9EAE8BDEDED695EADBA90906547E40D /* SCP.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D4E4D47526F8AF98B094D7EA4CA0E0 /* SCP.swift */; };
+		AA3CBEC148B70619F458891B5F2CF064 /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2883129B9560A93810BA7BC5F200F1B /* Shell.swift */; };
+		AD530DFB0A29D8A4F9AF5FD35558DC01 /* NSString+Utility.h in Headers */ = {isa = PBXBuildFile; fileRef = E6BA5E0351F4CD00EB28412B169CD65A /* NSString+Utility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD6A7C1DE3AE461B077AAB90CB47EA39 /* little_endian.h in Headers */ = {isa = PBXBuildFile; fileRef = A640D41E999F9D83DBB107CE1F52BD21 /* little_endian.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		ADC58A3223713845BF09153413D66593 /* OHConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = AFA8916778CB48E2FB2A24B7853A882E /* OHConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF789F2D75313D668C6AD7C327B59F43 /* OHMySQLContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D742EE4C6A7B3A5D0C2A6E5BB4DCC7 /* OHMySQLContainer.m */; };
+		B35BF4ABEB07E5EC572081FFDFAC0C33 /* Libssh2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F798A5DD52130A96CF18AB285D6923B /* Libssh2.m */; };
+		B44650EBE6043D778245A155A8BFA899 /* OHMappingProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 7478606D3E2C21DA5BD80ADFF0CD643A /* OHMappingProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4970B0F90C4571B4D0A8C57501E99A0 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FB33F4923DDE0A0FC19A59FEF0AC53 /* Error.swift */; };
+		B5366D9A710244A8DD233CF9C370DE63 /* mysql_version.h in Headers */ = {isa = PBXBuildFile; fileRef = CD5F7247189416E993253906FCFCFC9D /* mysql_version.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B9533F7DC6200B382DD042094846CEF7 /* my_list.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E335474387832E8FC54F64A9D3B34DC /* my_list.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BBD8DD85AA622D437EF7D21D64ED9B29 /* my_xml.h in Headers */ = {isa = PBXBuildFile; fileRef = 457C6786A25895BB1F096C2940DE3A86 /* my_xml.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BBFAC57D2C726EC265BFF44D04C7940A /* OHCharsetEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ECDEE2DA9CA3F84D65B254A660E8B6A /* OHCharsetEncoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD957146572ADC95B1396167BB8DF1DF /* service_my_snprintf.h in Headers */ = {isa = PBXBuildFile; fileRef = DB886CD8F361EB1BD93F941A49526BB9 /* service_my_snprintf.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BDB438D966603B16A6D158EB04EB097B /* SSHLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27E273052B8491CDF72F3D2CC485CED /* SSHLibrary.swift */; };
+		BDC9D808B17C095CBCB4D5D7EAE78029 /* sql_state.h in Headers */ = {isa = PBXBuildFile; fileRef = CBFC0CFE79C0533C28FB815FCDAFB575 /* sql_state.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BE648EB790B79F21A40A8F87F708C45E /* DNS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19DC697B5F253CADB918B41BDC5261D /* DNS.swift */; };
+		BF429CC8A49367C74BDFAE0D387306A2 /* mysql_stage.h in Headers */ = {isa = PBXBuildFile; fileRef = F3E02303D8C3A237694F491C77578A98 /* mysql_stage.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C1520E2446E2FA531DC9FC9F402EF649 /* OHSerializationProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = C79AF46893A97295BCBEDAF8F9EF00E1 /* OHSerializationProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2E8C17FF4F7AF1CC711D48E573BEA2E /* sql_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F594BE86F6784A5AB2C409723D7D45B /* sql_common.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C3A096C4C75C7AB5099DEFAA007C6F4D /* my_config.h in Headers */ = {isa = PBXBuildFile; fileRef = B5211E5B462FA04A03B3B35002F27689 /* my_config.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C418756B74C0788A12D91F112D24021E /* typelib.h in Headers */ = {isa = PBXBuildFile; fileRef = 14DC73B4C811EEFAD07915B604F1B4EF /* typelib.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C61A5473A17762C7EB393D5CD9515F21 /* NSString+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E29824A12B27EFE16E711891912DB8 /* NSString+Utility.m */; };
+		C6C4911371C7B573D25C20D98167B61C /* mysql_thread.h in Headers */ = {isa = PBXBuildFile; fileRef = E8BFAB5CF5ADBFACAEAB71503D7AF099 /* mysql_thread.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		CC0D30204AA86C0BF2266FC82FE946FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		CCC1E5DB23C09D07C0DC8B33DCBC2C59 /* mysql_file.h in Headers */ = {isa = PBXBuildFile; fileRef = B396A2D27EEFA969704038C4DBEF048D /* mysql_file.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		CEBB98D679F7C78E8013DA70750F130F /* m_ctype.h in Headers */ = {isa = PBXBuildFile; fileRef = 8554412A090B48EF144A1847A5EFB288 /* m_ctype.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		CEC534A2CEAB27AAD23D70A98E4E4829 /* OHMySQLUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 080AB0BABC7859FEF9A2D36CB9980454 /* OHMySQLUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D01861478E10602CC3816CE879E228C9 /* my_compiler.h in Headers */ = {isa = PBXBuildFile; fileRef = EA519CB28CB4D2CBF97F74BA82CE4C14 /* my_compiler.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D299EE6ED5BDC16452A30C94A82F9CF5 /* OHJoinConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D6F66064992A95ABE3B5023946ACD65 /* OHJoinConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D630E6D91C161DFEFAC8ED02E67007D0 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8CB94A5F723BD2978E0BDB3D31209F /* Queue.swift */; };
+		D6C475449C78065CE4458074F14F120F /* OHSSLConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F58C34676532D907E026F1C7720A354 /* OHSSLConfig.m */; };
+		D6FF041821F9D0D32C793ADFB93BD7C9 /* NSString+OHSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CE360164C57CA7D65CFACF93EE2F98 /* NSString+OHSerialization.m */; };
+		DB06852B53F7C7C5D9B31FACE8588719 /* errmsg.h in Headers */ = {isa = PBXBuildFile; fileRef = DC254F7023E99B35F52EC6FF428674F8 /* errmsg.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		DB74DE7C55650000D7622AC5712738AD /* decimal.h in Headers */ = {isa = PBXBuildFile; fileRef = C5520D41F5CE5364CBEB2A35E6E2FB73 /* decimal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		DB92E8A3A12CCFE3F61EF92AC00308E1 /* my_alloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FDAFDE79C8E9BEF4B92A938FEA93355 /* my_alloc.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		DD452BBB8DDA3E35D66DD22A7A47A92E /* my_thread.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EF05ABFBAA2F444B1DBD541A517EF47 /* my_thread.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		DDACD6D2811F376D3EC10B85B12466DD /* mysql_socket.h in Headers */ = {isa = PBXBuildFile; fileRef = 10BF5B7C261C982B406ECF8D3D6AAEC3 /* mysql_socket.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E141BA11FF53E9F216520CE67EC7B39B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BAC32F6001ED20E8B6D3B75800CD27 /* Extensions.swift */; };
+		E2ED665C2714D07E640308B8F174CFDB /* OHMySQLStore.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5DB8542293BE9E2EE198612FC7B5EC /* OHMySQLStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3489E7AB51E6232B0EF0D322C38033A /* OHMySQLQueryRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDC185476AD0994AFFAE1A54087931C /* OHMySQLQueryRequestFactory.m */; };
+		E5D691D93C7EA30466A7C1E859A42189 /* mysql_statement.h in Headers */ = {isa = PBXBuildFile; fileRef = D5F969DC9836BBD85EA277727C6C69FC /* mysql_statement.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E72D395125B6AF61299A0D42F511DC4B /* OHMySQLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CDCFD4F2686ADEA9E941FC1D07CAA6 /* OHMySQLUser.m */; };
+		E907BC73234B83B67641437A40CBE97F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC8B0ECF37CB6933A829528FE405DC2 /* Result.swift */; };
+		F27AFFBDCCA0524CFA89C1D212644FF6 /* Pods-portScanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA94C075E17CEC7A3F8807F01AF3B316 /* Pods-portScanner-dummy.m */; };
+		F4685B6443B1C15E4C9731719CBACACC /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 32BDAD63B042F3E2BC35E8C01DEAD0E2 /* yudpsocket.c */; };
+		FA5A98C5937E1C1EE9F03EA6E1FC180A /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D078CEB83D062A0A236CA94A2F5EC7 /* Command.swift */; };
+		FB90AFF67A0C4CC66750998C7461EDB3 /* psi_base.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D32F3678789701F9AB72D3BC3EACF64 /* psi_base.h */; settings = {ATTRIBUTES = (Private, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		072859949DF2E33435DCC236AC42608B /* PBXContainerItemProxy */ = {
+		0B9CA1F8CED018E8500447FE7BE00314 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3A41E77DDE5B15BA8F36198ECD7826AD;
+			remoteGlobalIDString = 43E15267BFEDB048036BF41D34E603D3;
+			remoteInfo = SwiftSH;
+		};
+		41E6864609060FD6DDFC245F0423FAC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ED9448AB8AE2D69BD65031A932D3A87;
 			remoteInfo = SwiftSocket;
 		};
-		51A4089220B587CC0C10746E04D8EB79 /* PBXContainerItemProxy */ = {
+		92E17FB1310D0A35C24C45B73FA425CA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BF8EDF5B4A02191462EDB0838EE7D013;
-			remoteInfo = MySqlSwiftNative;
-		};
-		A1B3D4A28B1BD538156F736AE8E1FE48 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6493A555F65BC13FA5C465E331EE782A;
-			remoteInfo = SwiftSH;
+			remoteGlobalIDString = 79B62E4AF5F8F991FF77695B09D4456D;
+			remoteInfo = OHMySQL;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0248AC4BB3DF0E1BB6B41AFC6D1E8FF2 /* byte_order_generic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = byte_order_generic.h; path = OHMySQL/lib/include/byte_order_generic.h; sourceTree = "<group>"; };
+		025F9DD33385C93E5D7C4D43EE486F2F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		027DAD342DB79844CBF8CF9A1911F481 /* Pods-portScanner-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-portScanner-resources.sh"; sourceTree = "<group>"; };
-		054AF7F71850FF10444F5E6E835038B3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		121724DA11A9380EFEFC383DBBD9A10E /* SwiftSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftSocket.modulemap; sourceTree = "<group>"; };
-		15585458A57F327680A663E633D8CFA6 /* SwiftSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSocket.framework; path = SwiftSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B0CFE939D25B4CC085857923ECE5BB9 /* SFTP.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SFTP.swift; path = SwiftSH/SFTP.swift; sourceTree = "<group>"; };
-		1C7B46C3B9DBD7CDA9E45C6AD8BCDEF7 /* Packets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Packets.swift; path = Sources/MySqlSwiftNative/Packets.swift; sourceTree = "<group>"; };
-		1EC02652AEB15D9390766201500B7F98 /* TCPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TCPClient.swift; path = Sources/TCPClient.swift; sourceTree = "<group>"; };
-		2229E0AC0CBC0B700E6490AF8C287C7C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		25B5DCD1D9FF10918D5F017736C32D2F /* SwiftSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSocket.xcconfig; sourceTree = "<group>"; };
-		2637B5F0C89B452BE541B669071A2613 /* SwiftSH-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSH-dummy.m"; sourceTree = "<group>"; };
-		28BFE965F863EA303CDF5A4FC7128B61 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = SwiftSH/Logger.swift; sourceTree = "<group>"; };
-		2B99BD255C370FE863C98824D593F95A /* MySqlSwiftNative.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MySqlSwiftNative.xcconfig; sourceTree = "<group>"; };
-		2C2E504D136BE53ABDA43914C1AFB33D /* SwiftSH-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSH-umbrella.h"; sourceTree = "<group>"; };
-		2CB56011E571C7A8B93223BF8667A642 /* SwiftSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSocket-dummy.m"; sourceTree = "<group>"; };
-		37EBCDFCBAA6F184F24EC81F5E1C3E9E /* MySqlSwiftNative.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MySqlSwiftNative.modulemap; sourceTree = "<group>"; };
+		0402543B13202E870A49894AF467D29C /* OHMySQLStoreCoordinator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLStoreCoordinator.m; path = OHMySQL/OHMySQLStoreCoordinator.m; sourceTree = "<group>"; };
+		05A52D5CDDCF41984F15E67B96EC5434 /* OHMySQLTimeline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLTimeline.m; path = OHMySQL/Models/OHMySQLTimeline.m; sourceTree = "<group>"; };
+		072F363141F4664935E1A1B2548371AE /* SwiftSH-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSH-dummy.m"; sourceTree = "<group>"; };
+		07CDCFD4F2686ADEA9E941FC1D07CAA6 /* OHMySQLUser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLUser.m; path = OHMySQL/Models/OHMySQLUser.m; sourceTree = "<group>"; };
+		080AB0BABC7859FEF9A2D36CB9980454 /* OHMySQLUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLUser.h; path = OHMySQL/Models/OHMySQLUser.h; sourceTree = "<group>"; };
+		083461235463ADE98A2CAEFB4D9270E0 /* Libssh2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Libssh2.h; path = SwiftSH/Libssh2.h; sourceTree = "<group>"; };
+		0899332D92AA49C55F916E9E0341153E /* mysqld_ername.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysqld_ername.h; path = OHMySQL/lib/include/mysqld_ername.h; sourceTree = "<group>"; };
+		08C3D49F28F5CEB016FEE2DABD25507C /* mysql_embed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_embed.h; path = OHMySQL/lib/include/mysql_embed.h; sourceTree = "<group>"; };
+		09D583F9CA869AD4ACC641074EEACB33 /* SwiftSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSocket-dummy.m"; sourceTree = "<group>"; };
+		09DD1D75CEDFA2E7922879F4B765F732 /* NSObject+Mapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Mapping.m"; path = "OHMySQL/Categories/NSObject+Mapping.m"; sourceTree = "<group>"; };
+		0AFA0BEC52227F3A91F272110BC709DB /* my_sys.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_sys.h; path = OHMySQL/lib/include/my_sys.h; sourceTree = "<group>"; };
+		0BBD14DAFCF3FEE35E32CC5BD7119DB7 /* NSNumber+OHSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+OHSerialization.m"; path = "OHMySQL/Categories/NSNumber+OHSerialization.m"; sourceTree = "<group>"; };
+		0E25FED00F61DF7BA6CA75691D2FC8EB /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = SwiftSH/Session.swift; sourceTree = "<group>"; };
+		0E8BEA813FE12435DDC62C6BCA2644D6 /* OHMySQL.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OHMySQL.xcconfig; sourceTree = "<group>"; };
+		10BF5B7C261C982B406ECF8D3D6AAEC3 /* mysql_socket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_socket.h; path = OHMySQL/lib/include/mysql/psi/mysql_socket.h; sourceTree = "<group>"; };
+		119A7771047C069796627F691E61BF6B /* OHMySQLQueryRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLQueryRequest.h; path = OHMySQL/Models/OHMySQLQueryRequest.h; sourceTree = "<group>"; };
+		11FEE3AEAF73E3701B87643AD8186FD3 /* SwiftSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSocket-prefix.pch"; sourceTree = "<group>"; };
+		123854C95DFE427BE22BA8BF894B6A73 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = SwiftSH/Logger.swift; sourceTree = "<group>"; };
+		14111089D2F23F7012001C3FE32CFC9D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14DC73B4C811EEFAD07915B604F1B4EF /* typelib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = typelib.h; path = OHMySQL/lib/include/typelib.h; sourceTree = "<group>"; };
+		16F5419658B6A9CE6309E544EFAB214A /* client_plugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = client_plugin.h; path = OHMySQL/lib/include/mysql/client_plugin.h; sourceTree = "<group>"; };
+		1756E04DB84A1A434C88567300B4F2B7 /* psi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = psi.h; path = OHMySQL/lib/include/mysql/psi/psi.h; sourceTree = "<group>"; };
+		1AE9F984E5EF1CA0901305BFF0D5B77F /* OHLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHLogging.h; path = OHMySQL/Constants/OHLogging.h; sourceTree = "<group>"; };
+		1D32F3678789701F9AB72D3BC3EACF64 /* psi_base.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = psi_base.h; path = OHMySQL/lib/include/mysql/psi/psi_base.h; sourceTree = "<group>"; };
+		1E8F681B1BBE4896F10B2B792CAF55AF /* mysql_mdl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_mdl.h; path = OHMySQL/lib/include/mysql/psi/mysql_mdl.h; sourceTree = "<group>"; };
+		1F5805A83B0B6869B5A86066BE2A1C3E /* TCPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TCPClient.swift; path = Sources/TCPClient.swift; sourceTree = "<group>"; };
+		1FB1B1231E698B767D049ED69CDCA5F3 /* my_dir.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_dir.h; path = OHMySQL/lib/include/my_dir.h; sourceTree = "<group>"; };
+		21BFE177D3D6DA42F410D7F3564E7223 /* OHMySQLSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLSerialization.m; path = OHMySQL/OHMySQLSerialization.m; sourceTree = "<group>"; };
+		22697BDE11630D2DD3C7808EB884499C /* OHMySQLQueryContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLQueryContext.m; path = OHMySQL/OHMySQLQueryContext.m; sourceTree = "<group>"; };
+		23DFC4F24B8BBBD5DECD0133C5B8E0D7 /* UDPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UDPClient.swift; path = Sources/UDPClient.swift; sourceTree = "<group>"; };
+		2990634990F8B5164E3AED6CBE009C03 /* OHMySQL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OHMySQL.framework; path = OHMySQL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29C6DB56DDB87F021B5BB01A4E183865 /* mysql_memory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_memory.h; path = OHMySQL/lib/include/mysql/psi/mysql_memory.h; sourceTree = "<group>"; };
+		29D2883F2C4792729E551E8BBA672B7C /* OHMySQLContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLContainer.h; path = OHMySQL/OHMySQLContainer.h; sourceTree = "<group>"; };
+		2D40D183FFFC638A2ADDE110DF2ECC1F /* OHRefreshOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHRefreshOptions.h; path = OHMySQL/Constants/OHRefreshOptions.h; sourceTree = "<group>"; };
+		2D6F66064992A95ABE3B5023946ACD65 /* OHJoinConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHJoinConstants.h; path = OHMySQL/Constants/OHJoinConstants.h; sourceTree = "<group>"; };
+		2F594BE86F6784A5AB2C409723D7D45B /* sql_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sql_common.h; path = OHMySQL/lib/include/sql_common.h; sourceTree = "<group>"; };
+		2F798A5DD52130A96CF18AB285D6923B /* Libssh2.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Libssh2.m; path = SwiftSH/Libssh2.m; sourceTree = "<group>"; };
+		313BBC7F48A8CE413342B7F50B672B71 /* mysql_com.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_com.h; path = OHMySQL/lib/include/mysql_com.h; sourceTree = "<group>"; };
+		327386DA7FFEE413B9C44C949A9B851E /* byte_order_generic_x86.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = byte_order_generic_x86.h; path = OHMySQL/lib/include/byte_order_generic_x86.h; sourceTree = "<group>"; };
+		32BDAD63B042F3E2BC35E8C01DEAD0E2 /* yudpsocket.c */ = {isa = PBXFileReference; includeInIndex = 1; name = yudpsocket.c; path = Sources/yudpsocket.c; sourceTree = "<group>"; };
+		340F39DEDF63187D774203F925BCBEAB /* mysql.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql.h; path = OHMySQL/lib/include/mysql.h; sourceTree = "<group>"; };
+		341A75DEDF45338AFCD107E72968FF35 /* plugin_auth_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = plugin_auth_common.h; path = OHMySQL/lib/include/mysql/plugin_auth_common.h; sourceTree = "<group>"; };
+		37FCD9C7899D689234429099CF0DD446 /* SwiftSH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSH.framework; path = SwiftSH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38685EB4CA6994215F922C522A7D850A /* SwiftSH-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSH-prefix.pch"; sourceTree = "<group>"; };
+		393460DC12EC07BCFFFAB2C7F452ABC7 /* SwiftSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSocket.framework; path = SwiftSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B85406CBEFFD3AB0E0D1B7DD98809CC /* client_authentication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = client_authentication.h; path = OHMySQL/lib/include/mysql/client_authentication.h; sourceTree = "<group>"; };
+		3ECDEE2DA9CA3F84D65B254A660E8B6A /* OHCharsetEncoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHCharsetEncoding.h; path = OHMySQL/Constants/OHCharsetEncoding.h; sourceTree = "<group>"; };
 		3F08260D837A75615DD386875E132752 /* Pods-portScanner-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-portScanner-acknowledgements.plist"; sourceTree = "<group>"; };
-		3F34AA8EE3FB543285A6FC18E31619D7 /* Functions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functions.swift; path = SwiftSH/Functions.swift; sourceTree = "<group>"; };
-		403EC04B96CB3FAA024D08C8FE3DF41D /* sha1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = sha1.swift; path = Sources/MySqlSwiftNative/sha1.swift; sourceTree = "<group>"; };
-		4054EEC93CF3FD5FB4D2987FAC78A8C4 /* MySqlSwiftNative.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MySqlSwiftNative.framework; path = MySqlSwiftNative.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F58C34676532D907E026F1C7720A354 /* OHSSLConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHSSLConfig.m; path = OHMySQL/Models/OHSSLConfig.m; sourceTree = "<group>"; };
+		3FF5EEB6343F0561F536282722BE9806 /* Channel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Channel.swift; path = SwiftSH/Channel.swift; sourceTree = "<group>"; };
 		409717FE1D7CEC0E97041376558ADB96 /* Pods-portScanner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-portScanner-acknowledgements.markdown"; sourceTree = "<group>"; };
-		41438E02B113585242882EB6DA46D5C0 /* Libssh2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Libssh2.h; path = SwiftSH/Libssh2.h; sourceTree = "<group>"; };
-		41494F67070D839A58B5A652B1ADCA57 /* SwiftSH.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftSH.modulemap; sourceTree = "<group>"; };
-		45A60717C509681F0F765045333EB7AE /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/MySqlSwiftNative/Result.swift; sourceTree = "<group>"; };
-		4A6E28B1FD1ACF4478E8578E118667D7 /* SwiftSH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSH.framework; path = SwiftSH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C729B8B848B1DEE8CC6C084CC559AEB /* Queue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Queue.swift; path = SwiftSH/Queue.swift; sourceTree = "<group>"; };
-		4C9DC207B5E9589B287C6D8ACBB81456 /* mysql.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = mysql.swift; path = Sources/MySqlSwiftNative/mysql.swift; sourceTree = "<group>"; };
-		4EE956B468A6D9CEB9D2B53D6A88387F /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/MySqlSwiftNative/Connection.swift; sourceTree = "<group>"; };
-		5630B62772AB42D910EF192A472EE31D /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = SwiftSH/Session.swift; sourceTree = "<group>"; };
+		457C6786A25895BB1F096C2940DE3A86 /* my_xml.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_xml.h; path = OHMySQL/lib/include/my_xml.h; sourceTree = "<group>"; };
+		46412D447D5B5E2A0745B5FE228C3102 /* NSString+OHSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+OHSerialization.h"; path = "OHMySQL/Categories/NSString+OHSerialization.h"; sourceTree = "<group>"; };
+		47E29824A12B27EFE16E711891912DB8 /* NSString+Utility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Utility.m"; path = "OHMySQL/Categories/NSString+Utility.m"; sourceTree = "<group>"; };
+		48B993C27903EBB8C790E75CA47EE988 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CC6DD9417E16DB0183A014E19DC2598 /* sslopt-longopts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "sslopt-longopts.h"; path = "OHMySQL/lib/include/sslopt-longopts.h"; sourceTree = "<group>"; };
+		4CC8B0ECF37CB6933A829528FE405DC2 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Result.swift; sourceTree = "<group>"; };
+		5191B5E01A9E5681EF7671771E21D8D4 /* OHMySQLStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLStore.m; path = OHMySQL/Models/OHMySQLStore.m; sourceTree = "<group>"; };
+		5481B778117A6C138E3F2C1F0BC8A2B8 /* OHMySQLSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLSerialization.h; path = OHMySQL/OHMySQLSerialization.h; sourceTree = "<group>"; };
+		5E335474387832E8FC54F64A9D3B34DC /* my_list.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_list.h; path = OHMySQL/lib/include/my_list.h; sourceTree = "<group>"; };
+		5FF4F07B3A89996AFBA165B54BE265E2 /* sslopt-case.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "sslopt-case.h"; path = "OHMySQL/lib/include/sslopt-case.h"; sourceTree = "<group>"; };
+		601EE26C4FBA3B1F5CD07447AA19F1B5 /* OHMySQLStoreCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLStoreCoordinator.h; path = OHMySQL/OHMySQLStoreCoordinator.h; sourceTree = "<group>"; };
+		60F172ACED9DEC69663C2E832FD91653 /* my_global.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_global.h; path = OHMySQL/lib/include/my_global.h; sourceTree = "<group>"; };
 		6389EADBCDE09511331FB92619185122 /* Pods-portScanner-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-portScanner-frameworks.sh"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		67E513B0F94EC0A606A03983093082E8 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/MySqlSwiftNative/Utils.swift; sourceTree = "<group>"; };
-		6B6820BA38C95DA055501EED1D1072FB /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/MySqlSwiftNative/Query.swift; sourceTree = "<group>"; };
-		6C7EB8CF61ED983719D897FF5511E0F7 /* ConsoleLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConsoleLogger.swift; path = SwiftSH/ConsoleLogger.swift; sourceTree = "<group>"; };
-		6D86602BB2699A02670403EAE090B89C /* yudpsocket.c */ = {isa = PBXFileReference; includeInIndex = 1; name = yudpsocket.c; path = Sources/yudpsocket.c; sourceTree = "<group>"; };
-		6E628D3AD7F7B42B0F61C36F3A2A02E7 /* SwiftSH-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSH-prefix.pch"; sourceTree = "<group>"; };
-		7893DC19DB62C55067AAE4F909F70FF9 /* Socket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = Sources/Socket.swift; sourceTree = "<group>"; };
-		7D4B9B0F3F0C15E77DCF5C7CB81749A9 /* UDPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UDPClient.swift; path = Sources/UDPClient.swift; sourceTree = "<group>"; };
-		7DE16CED7D883AF5F3309F9EFD833797 /* Channel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Channel.swift; path = SwiftSH/Channel.swift; sourceTree = "<group>"; };
-		8857D74284059F2C332D9100DC759F39 /* ytcpsocket.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ytcpsocket.c; path = Sources/ytcpsocket.c; sourceTree = "<group>"; };
-		8CA9938614486BC07A6E9D40AC6D0FD6 /* Command.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Command.swift; path = SwiftSH/Command.swift; sourceTree = "<group>"; };
+		66EE9598108EA04494647A3E35FFE9BE /* sslopt-vars.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "sslopt-vars.h"; path = "OHMySQL/lib/include/sslopt-vars.h"; sourceTree = "<group>"; };
+		68716E7CB4A81BF713C27D9AF9B7DA3B /* ConsoleLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConsoleLogger.swift; path = SwiftSH/ConsoleLogger.swift; sourceTree = "<group>"; };
+		69446B9D5D10D0529BF3E6B79CC05E54 /* mysql_com_server.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_com_server.h; path = OHMySQL/lib/include/mysql_com_server.h; sourceTree = "<group>"; };
+		69477AE8ACBC6CB7BE5680860463E205 /* thr_rwlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = thr_rwlock.h; path = OHMySQL/lib/include/thr_rwlock.h; sourceTree = "<group>"; };
+		6CA9E207B847E5760D287E4A42D352E9 /* SwiftSH-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSH-umbrella.h"; sourceTree = "<group>"; };
+		7094F8E3BE4586408207FE79AD4F208F /* m_string.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = m_string.h; path = OHMySQL/lib/include/m_string.h; sourceTree = "<group>"; };
+		7127A0192DD7A91B131C7460CDD5B9B9 /* my_command.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_command.h; path = OHMySQL/lib/include/my_command.h; sourceTree = "<group>"; };
+		71C22FB1A4FF6279CEC4D2DB88EED783 /* SFTP.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SFTP.swift; path = SwiftSH/SFTP.swift; sourceTree = "<group>"; };
+		73795F6620CE91B4AFF5B6E46F2524FC /* thr_cond.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = thr_cond.h; path = OHMySQL/lib/include/thr_cond.h; sourceTree = "<group>"; };
+		7478606D3E2C21DA5BD80ADFF0CD643A /* OHMappingProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMappingProtocol.h; path = OHMySQL/OHMappingProtocol.h; sourceTree = "<group>"; };
+		74CBC15D9FB13708C89CE19D70512F2C /* big_endian.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = big_endian.h; path = OHMySQL/lib/include/big_endian.h; sourceTree = "<group>"; };
+		756DD8A932278335DA14926A47E818C8 /* my_dbug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_dbug.h; path = OHMySQL/lib/include/my_dbug.h; sourceTree = "<group>"; };
+		78FB33F4923DDE0A0FC19A59FEF0AC53 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = SwiftSH/Error.swift; sourceTree = "<group>"; };
+		7A43DFF5E2F3E42A0F1C07DE65291F54 /* OHCharsetEncoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHCharsetEncoding.m; path = OHMySQL/Constants/OHCharsetEncoding.m; sourceTree = "<group>"; };
+		7CDC185476AD0994AFFAE1A54087931C /* OHMySQLQueryRequestFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLQueryRequestFactory.m; path = OHMySQL/OHMySQLQueryRequestFactory.m; sourceTree = "<group>"; };
+		8248DD2FF444901C133C1F1969AC02B8 /* SwiftSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSocket.xcconfig; sourceTree = "<group>"; };
+		82F40A191C59EB5E4E0AA7A4614B752C /* SwiftSH.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSH.xcconfig; sourceTree = "<group>"; };
+		8498BC70C82817FC539F7E3DF598C0F1 /* mysqld_error.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysqld_error.h; path = OHMySQL/lib/include/mysqld_error.h; sourceTree = "<group>"; };
+		8554412A090B48EF144A1847A5EFB288 /* m_ctype.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = m_ctype.h; path = OHMySQL/lib/include/m_ctype.h; sourceTree = "<group>"; };
+		85CF534632611887E632ED7B018BDD56 /* plugin_trace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = plugin_trace.h; path = OHMySQL/lib/include/mysql/plugin_trace.h; sourceTree = "<group>"; };
+		8FDAFDE79C8E9BEF4B92A938FEA93355 /* my_alloc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_alloc.h; path = OHMySQL/lib/include/my_alloc.h; sourceTree = "<group>"; };
+		90283FCB98FF23CA0628C7A190DAFCEC /* OHMySQLTimeline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLTimeline.h; path = OHMySQL/Models/OHMySQLTimeline.h; sourceTree = "<group>"; };
+		90682D72964737754DD14737E7CA72C8 /* OHMySQL-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OHMySQL-dummy.m"; sourceTree = "<group>"; };
+		910EE2E74F2333D9BCD85B6226243DF3 /* get_password.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = get_password.h; path = OHMySQL/lib/include/mysql/get_password.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9C4FDDD68D9606E74ACB1A33E3FD0764 /* main.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = main.swift; path = Sources/MySqlSwiftNative/main.swift; sourceTree = "<group>"; };
-		9FE933378E932913B2D0EDC4BD28EF10 /* Socket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = Sources/MySqlSwiftNative/Socket.swift; sourceTree = "<group>"; };
-		A17B2523A208A312EE7A2DAFB5C62255 /* Libssh2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Libssh2.swift; path = SwiftSH/Libssh2.swift; sourceTree = "<group>"; };
-		A93CB3C0667F37D69299D1A97D1E1BD3 /* Libssh2.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Libssh2.m; path = SwiftSH/Libssh2.m; sourceTree = "<group>"; };
+		94BAA34064A95CA313BA37B2321A81E6 /* Socket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = Sources/Socket.swift; sourceTree = "<group>"; };
+		94ED44ABF7A2C1E9BA1EF35043AA2075 /* mysql_table.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_table.h; path = OHMySQL/lib/include/mysql/psi/mysql_table.h; sourceTree = "<group>"; };
+		98CE360164C57CA7D65CFACF93EE2F98 /* NSString+OHSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+OHSerialization.m"; path = "OHMySQL/Categories/NSString+OHSerialization.m"; sourceTree = "<group>"; };
+		993D8F78486442140FC9D01DD459F5F9 /* ytcpsocket.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ytcpsocket.c; path = Sources/ytcpsocket.c; sourceTree = "<group>"; };
+		9A1C51ECF1A85683678F9B3A98BFBF31 /* SwiftSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftSocket.modulemap; sourceTree = "<group>"; };
+		9AFC673E65108EFA1F4A9BF5A2D6D223 /* thr_mutex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = thr_mutex.h; path = OHMySQL/lib/include/thr_mutex.h; sourceTree = "<group>"; };
+		9C67C5D5C2C4D8A35CE5DFAB2C98A8DD /* SwiftSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSocket-umbrella.h"; sourceTree = "<group>"; };
+		9DDA5CDD0A1145BAF29E58AD31CB758A /* my_byteorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_byteorder.h; path = OHMySQL/lib/include/my_byteorder.h; sourceTree = "<group>"; };
+		9EF05ABFBAA2F444B1DBD541A517EF47 /* my_thread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_thread.h; path = OHMySQL/lib/include/my_thread.h; sourceTree = "<group>"; };
+		A2883129B9560A93810BA7BC5F200F1B /* Shell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shell.swift; path = SwiftSH/Shell.swift; sourceTree = "<group>"; };
+		A328EA91F1F3C3DB5343A2833615852B /* psi_memory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = psi_memory.h; path = OHMySQL/lib/include/mysql/psi/psi_memory.h; sourceTree = "<group>"; };
+		A640D41E999F9D83DBB107CE1F52BD21 /* little_endian.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = little_endian.h; path = OHMySQL/lib/include/little_endian.h; sourceTree = "<group>"; };
 		AAC1945A0F79F3986B3C3BFC432A38E6 /* Pods-portScanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-portScanner.modulemap"; sourceTree = "<group>"; };
 		AAC966AAA8AF4A3D93AC0CB092A5B217 /* Pods-portScanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-portScanner.debug.xcconfig"; sourceTree = "<group>"; };
 		AAE5BB238F4A78CE909239AC2265A93D /* Pods-portScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-portScanner.release.xcconfig"; sourceTree = "<group>"; };
-		AF5BF5794094FAA5B1A35377C000E469 /* Table.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Table.swift; path = Sources/MySqlSwiftNative/Table.swift; sourceTree = "<group>"; };
-		AFEF29A4DEEF5990C6521B1E625A1FA3 /* SwiftSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSocket-prefix.pch"; sourceTree = "<group>"; };
-		B0363FAC3DF47199FAEB75598F48292E /* MySqlSwiftNative-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MySqlSwiftNative-umbrella.h"; sourceTree = "<group>"; };
+		AB5DB8542293BE9E2EE198612FC7B5EC /* OHMySQLStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLStore.h; path = OHMySQL/Models/OHMySQLStore.h; sourceTree = "<group>"; };
+		AD9EB49A37F0776DC42726B4BF8EC743 /* OHMySQL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQL.h; path = OHMySQL/OHMySQL.h; sourceTree = "<group>"; };
+		AF252574D52AD05F4229B5D2A3222B34 /* mysql_sp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_sp.h; path = OHMySQL/lib/include/mysql/psi/mysql_sp.h; sourceTree = "<group>"; };
+		AFA8916778CB48E2FB2A24B7853A882E /* OHConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHConstants.h; path = OHMySQL/Constants/OHConstants.h; sourceTree = "<group>"; };
 		B04D3DD5F64C259B581183CC7D56DCBC /* Pods-portScanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-portScanner-umbrella.h"; sourceTree = "<group>"; };
-		B329D5890542344FB1912B145133A602 /* Pods_portScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_portScanner.framework; path = "Pods-portScanner.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B56E41A64A3308BEC6F0599A4DC04992 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = SwiftSH/Extensions.swift; sourceTree = "<group>"; };
+		B08DE2A5314A2953FA37278820D21A00 /* mysql_ps.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_ps.h; path = OHMySQL/lib/include/mysql/psi/mysql_ps.h; sourceTree = "<group>"; };
+		B13DB3F46A275FD2C4D15D1EC4F84901 /* NSObject+Mapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Mapping.h"; path = "OHMySQL/Categories/NSObject+Mapping.h"; sourceTree = "<group>"; };
+		B2D4E4D47526F8AF98B094D7EA4CA0E0 /* SCP.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCP.swift; path = SwiftSH/SCP.swift; sourceTree = "<group>"; };
+		B396A2D27EEFA969704038C4DBEF048D /* mysql_file.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_file.h; path = OHMySQL/lib/include/mysql/psi/mysql_file.h; sourceTree = "<group>"; };
+		B5211E5B462FA04A03B3B35002F27689 /* my_config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_config.h; path = OHMySQL/lib/include/my_config.h; sourceTree = "<group>"; };
 		BA94C075E17CEC7A3F8807F01AF3B316 /* Pods-portScanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-portScanner-dummy.m"; sourceTree = "<group>"; };
-		C00E79538743DDDA8FFC7D44ED596EF7 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = SwiftSH/Error.swift; sourceTree = "<group>"; };
-		C954DF95748739DD10A9934311F22011 /* DNS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DNS.swift; path = SwiftSH/DNS.swift; sourceTree = "<group>"; };
-		CD15D5F4B91F7D5C939AE8DD9D076F1A /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Result.swift; sourceTree = "<group>"; };
-		CE21CC882F83AA4F86A8B2B115C5FE13 /* SCP.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCP.swift; path = SwiftSH/SCP.swift; sourceTree = "<group>"; };
-		CF4498793BE1441C11C93DD6F373D18A /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/MySqlSwiftNative/Statement.swift; sourceTree = "<group>"; };
-		D94020BD83653BF04A6E1E1635F934A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D99245A0423B5E28A4CC53E8A266330A /* MySqlSwiftNative-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MySqlSwiftNative-prefix.pch"; sourceTree = "<group>"; };
-		D9E64525D534ADE131249606A584C5DB /* Shell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shell.swift; path = SwiftSH/Shell.swift; sourceTree = "<group>"; };
-		E074732D2042B4026649AFC18E515FA1 /* SSHLibrary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSHLibrary.swift; path = SwiftSH/SSHLibrary.swift; sourceTree = "<group>"; };
-		E30B84B5D222B036B0202ACEC943D86B /* MySqlSwiftNative-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MySqlSwiftNative-dummy.m"; sourceTree = "<group>"; };
-		ED79AAB19E3057AE0FC799DF177AF439 /* SwiftSH.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSH.xcconfig; sourceTree = "<group>"; };
-		F5655D98B34E6D4FB11448F14802032A /* SwiftSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSocket-umbrella.h"; sourceTree = "<group>"; };
+		BB5CD9813AEFC9E0DEA0BE52B1F50971 /* Libssh2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Libssh2.swift; path = SwiftSH/Libssh2.swift; sourceTree = "<group>"; };
+		BF3A00C76095E5CE404451680D7CA959 /* Functions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functions.swift; path = SwiftSH/Functions.swift; sourceTree = "<group>"; };
+		C175A839A22629E8388DB5191175256C /* OHSSLConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHSSLConfig.h; path = OHMySQL/Models/OHSSLConfig.h; sourceTree = "<group>"; };
+		C19DC697B5F253CADB918B41BDC5261D /* DNS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DNS.swift; path = SwiftSH/DNS.swift; sourceTree = "<group>"; };
+		C1AE1B27FF3B4727C689AD7DF99B550E /* OHProtocolType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHProtocolType.h; path = OHMySQL/Constants/OHProtocolType.h; sourceTree = "<group>"; };
+		C5520D41F5CE5364CBEB2A35E6E2FB73 /* decimal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = decimal.h; path = OHMySQL/lib/include/decimal.h; sourceTree = "<group>"; };
+		C79AF46893A97295BCBEDAF8F9EF00E1 /* OHSerializationProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHSerializationProtocol.h; path = OHMySQL/OHSerializationProtocol.h; sourceTree = "<group>"; };
+		C9D078CEB83D062A0A236CA94A2F5EC7 /* Command.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Command.swift; path = SwiftSH/Command.swift; sourceTree = "<group>"; };
+		CBFC0CFE79C0533C28FB815FCDAFB575 /* sql_state.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sql_state.h; path = OHMySQL/lib/include/sql_state.h; sourceTree = "<group>"; };
+		CD5F7247189416E993253906FCFCFC9D /* mysql_version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_version.h; path = OHMySQL/lib/include/mysql_version.h; sourceTree = "<group>"; };
+		CF59FF73ED1A485A5B962B166CC02D75 /* OHMySQL-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OHMySQL-prefix.pch"; sourceTree = "<group>"; };
+		D18482C16D111A3FA0FBDA051569CB7F /* NSData+OHSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+OHSerialization.m"; path = "OHMySQL/Categories/NSData+OHSerialization.m"; sourceTree = "<group>"; };
+		D34DBCF6972B03A1AABEDE7A0AF9EE3A /* libmysqlclient.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libmysqlclient.a; path = OHMySQL/lib/ios/libmysqlclient.a; sourceTree = "<group>"; };
+		D35FD7F901F97BB7BAFC7DD22C4B264A /* mysql_time.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_time.h; path = OHMySQL/lib/include/mysql_time.h; sourceTree = "<group>"; };
+		D37FE381AC7BB563E8A37C552595B4B8 /* keycache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = keycache.h; path = OHMySQL/lib/include/keycache.h; sourceTree = "<group>"; };
+		D5DF56D06A0F89BDE4F97367EC565D2D /* my_getopt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_getopt.h; path = OHMySQL/lib/include/my_getopt.h; sourceTree = "<group>"; };
+		D5F969DC9836BBD85EA277727C6C69FC /* mysql_statement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_statement.h; path = OHMySQL/lib/include/mysql/psi/mysql_statement.h; sourceTree = "<group>"; };
+		D6ADA8B967873F9E61B0A04EDC67432F /* service_mysql_alloc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = service_mysql_alloc.h; path = OHMySQL/lib/include/mysql/service_mysql_alloc.h; sourceTree = "<group>"; };
+		D7B00038364F430D63743CFA9443CD42 /* mysql_lex_string.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_lex_string.h; path = OHMySQL/lib/include/mysql/mysql_lex_string.h; sourceTree = "<group>"; };
+		D8D70F91FE19901B1347CE62ED67EC9B /* mysql_idle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_idle.h; path = OHMySQL/lib/include/mysql/psi/mysql_idle.h; sourceTree = "<group>"; };
+		D8DC1EB82552EA2AC8D178629E295501 /* binary_log_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = binary_log_types.h; path = OHMySQL/lib/include/binary_log_types.h; sourceTree = "<group>"; };
+		DB886CD8F361EB1BD93F941A49526BB9 /* service_my_snprintf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = service_my_snprintf.h; path = OHMySQL/lib/include/mysql/service_my_snprintf.h; sourceTree = "<group>"; };
+		DC254F7023E99B35F52EC6FF428674F8 /* errmsg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = errmsg.h; path = OHMySQL/lib/include/errmsg.h; sourceTree = "<group>"; };
+		DDBF8BD78C9415991CC7822D66469359 /* NSString+Escaping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Escaping.m"; path = "OHMySQL/Categories/NSString+Escaping.m"; sourceTree = "<group>"; };
+		DDD16D07248A2DEB950E5AD89B39C5E9 /* Pods_portScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_portScanner.framework; path = "Pods-portScanner.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE87040AEA3543FA006F22D4C48B1E80 /* my_thread_local.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_thread_local.h; path = OHMySQL/lib/include/my_thread_local.h; sourceTree = "<group>"; };
+		DFDC5068F9166F01B752A8280224708C /* mysql_transaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_transaction.h; path = OHMySQL/lib/include/mysql/psi/mysql_transaction.h; sourceTree = "<group>"; };
+		E448027E7AA3FE625FB796A2C0CAE06B /* OHMySQLQueryRequestFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLQueryRequestFactory.h; path = OHMySQL/OHMySQLQueryRequestFactory.h; sourceTree = "<group>"; };
+		E6BA5E0351F4CD00EB28412B169CD65A /* NSString+Utility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Utility.h"; path = "OHMySQL/Categories/NSString+Utility.h"; sourceTree = "<group>"; };
+		E7D7C51C0702678D099C52F971DDC39D /* OHResultErrorType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHResultErrorType.h; path = OHMySQL/Constants/OHResultErrorType.h; sourceTree = "<group>"; };
+		E8BFAB5CF5ADBFACAEAB71503D7AF099 /* mysql_thread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_thread.h; path = OHMySQL/lib/include/mysql/psi/mysql_thread.h; sourceTree = "<group>"; };
+		EA519CB28CB4D2CBF97F74BA82CE4C14 /* my_compiler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = my_compiler.h; path = OHMySQL/lib/include/my_compiler.h; sourceTree = "<group>"; };
+		EC8CB94A5F723BD2978E0BDB3D31209F /* Queue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Queue.swift; path = SwiftSH/Queue.swift; sourceTree = "<group>"; };
+		ED9CAF08EAF7F5B52E95A0806C0881F1 /* OHMySQL.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = OHMySQL.modulemap; sourceTree = "<group>"; };
+		F0BAC32F6001ED20E8B6D3B75800CD27 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = SwiftSH/Extensions.swift; sourceTree = "<group>"; };
+		F217F776ECEF89AC354B1CF32EE54BFE /* NSData+OHSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+OHSerialization.h"; path = "OHMySQL/Categories/NSData+OHSerialization.h"; sourceTree = "<group>"; };
+		F27E273052B8491CDF72F3D2CC485CED /* SSHLibrary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSHLibrary.swift; path = SwiftSH/SSHLibrary.swift; sourceTree = "<group>"; };
+		F3E02303D8C3A237694F491C77578A98 /* mysql_stage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mysql_stage.h; path = OHMySQL/lib/include/mysql/psi/mysql_stage.h; sourceTree = "<group>"; };
+		F4DF7554EB09FFC62473B915BC919CCD /* OHMySQLQueryContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLQueryContext.h; path = OHMySQL/OHMySQLQueryContext.h; sourceTree = "<group>"; };
 		F6595F8891CC6F7D1122940EC2D4234C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F695A4A7D8E45C361DBCF0BBB11344E0 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Sources/MySqlSwiftNative/Constants.swift; sourceTree = "<group>"; };
-		FB8C49188EE6143CC7198033DC124F2D /* tests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = tests.swift; path = Sources/MySqlSwiftNative/tests.swift; sourceTree = "<group>"; };
+		F6D742EE4C6A7B3A5D0C2A6E5BB4DCC7 /* OHMySQLContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLContainer.m; path = OHMySQL/OHMySQLContainer.m; sourceTree = "<group>"; };
+		F771F0472A89B9310DCE7C1834CA2BC3 /* OHJoinConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHJoinConstants.m; path = OHMySQL/Constants/OHJoinConstants.m; sourceTree = "<group>"; };
+		F78A2EE4662621EA4A3037699F3345BE /* NSNumber+OHSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+OHSerialization.h"; path = "OHMySQL/Categories/NSNumber+OHSerialization.h"; sourceTree = "<group>"; };
+		F9ADD7F4B5DE5A14A63BF7C7B7C1959B /* OHMySQLQueryRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLQueryRequest.m; path = OHMySQL/Models/OHMySQLQueryRequest.m; sourceTree = "<group>"; };
+		F9FD480FB11C65ABCABF3A6916EC0561 /* OHMySQL-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OHMySQL-umbrella.h"; sourceTree = "<group>"; };
+		FBB085F8AE946563A8E068D6AE6CB2BB /* NSString+Escaping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Escaping.h"; path = "OHMySQL/Categories/NSString+Escaping.h"; sourceTree = "<group>"; };
+		FEF11A66A5A3B2BD288B7C060B5AB837 /* SwiftSH.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftSH.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		06FD896F71E21C0537CB2662B2A75B69 /* Frameworks */ = {
+		0ECC1EAF195409F5ED0B100E3B0464B3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9625CA9BB6F04E8AC5DD66CC8EDBDE3 /* Foundation.framework in Frameworks */,
+				CC0D30204AA86C0BF2266FC82FE946FC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5BD9121B2D8D7C5C69D292694FC799D8 /* Frameworks */ = {
+		651BF11C41E55673233FCBFBA7B0D5D3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BB96F83DF0CB780A32AF77BD86B7347 /* Foundation.framework in Frameworks */,
+				10ED153409AE533F6FBF31D0A884C3FF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		62687188F0B267917F03826FCE37587F /* Frameworks */ = {
+		E8ED6D0FC518D460319FF9E445BF7980 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C45856279664714E2DC86301DD22608F /* Foundation.framework in Frameworks */,
+				0994318A71CDB8CCCAE615479CD953B6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		926507DA5AD71DE132ED092FF579DEAC /* Frameworks */ = {
+		F63D679E56DDF7A4583E8B7AF2AF0686 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45B0DD253A0DF8F3F36987758EADB29C /* Foundation.framework in Frameworks */,
+				8F8ED1F81E3D65F4CA284CB9CD0E18EA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B7E3A052ABBFCC72C49EB0F521A4A31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2990634990F8B5164E3AED6CBE009C03 /* OHMySQL.framework */,
+				DDD16D07248A2DEB950E5AD89B39C5E9 /* Pods_portScanner.framework */,
+				37FCD9C7899D689234429099CF0DD446 /* SwiftSH.framework */,
+				393460DC12EC07BCFFFAB2C7F452ABC7 /* SwiftSocket.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		0EBEE510F87BDCD6C1988775AAE6FFC6 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,54 +400,136 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		4F39B3F5DD9D3A1522FA1B334B479F24 /* Products */ = {
+		3AB6813FCD213911BF820E3A9637200F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4054EEC93CF3FD5FB4D2987FAC78A8C4 /* MySqlSwiftNative.framework */,
-				B329D5890542344FB1912B145133A602 /* Pods_portScanner.framework */,
-				4A6E28B1FD1ACF4478E8578E118667D7 /* SwiftSH.framework */,
-				15585458A57F327680A663E633D8CFA6 /* SwiftSocket.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		5BCAA96262BC2D867E7411516544A257 /* Libssh2 */ = {
-			isa = PBXGroup;
-			children = (
-				41438E02B113585242882EB6DA46D5C0 /* Libssh2.h */,
-				A93CB3C0667F37D69299D1A97D1E1BD3 /* Libssh2.m */,
-				A17B2523A208A312EE7A2DAFB5C62255 /* Libssh2.swift */,
-			);
-			name = Libssh2;
-			sourceTree = "<group>";
-		};
-		770C8F7BBD4F103185317BC24B9BE073 /* SwiftSocket */ = {
-			isa = PBXGroup;
-			children = (
-				CD15D5F4B91F7D5C939AE8DD9D076F1A /* Result.swift */,
-				7893DC19DB62C55067AAE4F909F70FF9 /* Socket.swift */,
-				1EC02652AEB15D9390766201500B7F98 /* TCPClient.swift */,
-				7D4B9B0F3F0C15E77DCF5C7CB81749A9 /* UDPClient.swift */,
-				8857D74284059F2C332D9100DC759F39 /* ytcpsocket.c */,
-				6D86602BB2699A02670403EAE090B89C /* yudpsocket.c */,
-				E1EFDFB66DD57FC60BB1EE01F06FE49D /* Support Files */,
-			);
-			name = SwiftSocket;
-			path = SwiftSocket;
-			sourceTree = "<group>";
-		};
-		7BD9160ADABACBD3BFCFBF22A9F1D0AB /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2229E0AC0CBC0B700E6490AF8C287C7C /* Info.plist */,
-				41494F67070D839A58B5A652B1ADCA57 /* SwiftSH.modulemap */,
-				ED79AAB19E3057AE0FC799DF177AF439 /* SwiftSH.xcconfig */,
-				2637B5F0C89B452BE541B669071A2613 /* SwiftSH-dummy.m */,
-				6E628D3AD7F7B42B0F61C36F3A2A02E7 /* SwiftSH-prefix.pch */,
-				2C2E504D136BE53ABDA43914C1AFB33D /* SwiftSH-umbrella.h */,
+				48B993C27903EBB8C790E75CA47EE988 /* Info.plist */,
+				9A1C51ECF1A85683678F9B3A98BFBF31 /* SwiftSocket.modulemap */,
+				8248DD2FF444901C133C1F1969AC02B8 /* SwiftSocket.xcconfig */,
+				09D583F9CA869AD4ACC641074EEACB33 /* SwiftSocket-dummy.m */,
+				11FEE3AEAF73E3701B87643AD8186FD3 /* SwiftSocket-prefix.pch */,
+				9C67C5D5C2C4D8A35CE5DFAB2C98A8DD /* SwiftSocket-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SwiftSH";
+			path = "../Target Support Files/SwiftSocket";
+			sourceTree = "<group>";
+		};
+		760B6253449F0C3BEE30F93B9377E157 /* OHMySQL */ = {
+			isa = PBXGroup;
+			children = (
+				74CBC15D9FB13708C89CE19D70512F2C /* big_endian.h */,
+				D8DC1EB82552EA2AC8D178629E295501 /* binary_log_types.h */,
+				0248AC4BB3DF0E1BB6B41AFC6D1E8FF2 /* byte_order_generic.h */,
+				327386DA7FFEE413B9C44C949A9B851E /* byte_order_generic_x86.h */,
+				3B85406CBEFFD3AB0E0D1B7DD98809CC /* client_authentication.h */,
+				16F5419658B6A9CE6309E544EFAB214A /* client_plugin.h */,
+				C5520D41F5CE5364CBEB2A35E6E2FB73 /* decimal.h */,
+				DC254F7023E99B35F52EC6FF428674F8 /* errmsg.h */,
+				910EE2E74F2333D9BCD85B6226243DF3 /* get_password.h */,
+				D37FE381AC7BB563E8A37C552595B4B8 /* keycache.h */,
+				A640D41E999F9D83DBB107CE1F52BD21 /* little_endian.h */,
+				8554412A090B48EF144A1847A5EFB288 /* m_ctype.h */,
+				7094F8E3BE4586408207FE79AD4F208F /* m_string.h */,
+				8FDAFDE79C8E9BEF4B92A938FEA93355 /* my_alloc.h */,
+				9DDA5CDD0A1145BAF29E58AD31CB758A /* my_byteorder.h */,
+				7127A0192DD7A91B131C7460CDD5B9B9 /* my_command.h */,
+				EA519CB28CB4D2CBF97F74BA82CE4C14 /* my_compiler.h */,
+				B5211E5B462FA04A03B3B35002F27689 /* my_config.h */,
+				756DD8A932278335DA14926A47E818C8 /* my_dbug.h */,
+				1FB1B1231E698B767D049ED69CDCA5F3 /* my_dir.h */,
+				D5DF56D06A0F89BDE4F97367EC565D2D /* my_getopt.h */,
+				60F172ACED9DEC69663C2E832FD91653 /* my_global.h */,
+				5E335474387832E8FC54F64A9D3B34DC /* my_list.h */,
+				0AFA0BEC52227F3A91F272110BC709DB /* my_sys.h */,
+				9EF05ABFBAA2F444B1DBD541A517EF47 /* my_thread.h */,
+				DE87040AEA3543FA006F22D4C48B1E80 /* my_thread_local.h */,
+				457C6786A25895BB1F096C2940DE3A86 /* my_xml.h */,
+				340F39DEDF63187D774203F925BCBEAB /* mysql.h */,
+				313BBC7F48A8CE413342B7F50B672B71 /* mysql_com.h */,
+				69446B9D5D10D0529BF3E6B79CC05E54 /* mysql_com_server.h */,
+				08C3D49F28F5CEB016FEE2DABD25507C /* mysql_embed.h */,
+				B396A2D27EEFA969704038C4DBEF048D /* mysql_file.h */,
+				D8D70F91FE19901B1347CE62ED67EC9B /* mysql_idle.h */,
+				D7B00038364F430D63743CFA9443CD42 /* mysql_lex_string.h */,
+				1E8F681B1BBE4896F10B2B792CAF55AF /* mysql_mdl.h */,
+				29C6DB56DDB87F021B5BB01A4E183865 /* mysql_memory.h */,
+				B08DE2A5314A2953FA37278820D21A00 /* mysql_ps.h */,
+				10BF5B7C261C982B406ECF8D3D6AAEC3 /* mysql_socket.h */,
+				AF252574D52AD05F4229B5D2A3222B34 /* mysql_sp.h */,
+				F3E02303D8C3A237694F491C77578A98 /* mysql_stage.h */,
+				D5F969DC9836BBD85EA277727C6C69FC /* mysql_statement.h */,
+				94ED44ABF7A2C1E9BA1EF35043AA2075 /* mysql_table.h */,
+				E8BFAB5CF5ADBFACAEAB71503D7AF099 /* mysql_thread.h */,
+				D35FD7F901F97BB7BAFC7DD22C4B264A /* mysql_time.h */,
+				DFDC5068F9166F01B752A8280224708C /* mysql_transaction.h */,
+				CD5F7247189416E993253906FCFCFC9D /* mysql_version.h */,
+				0899332D92AA49C55F916E9E0341153E /* mysqld_ername.h */,
+				8498BC70C82817FC539F7E3DF598C0F1 /* mysqld_error.h */,
+				F217F776ECEF89AC354B1CF32EE54BFE /* NSData+OHSerialization.h */,
+				D18482C16D111A3FA0FBDA051569CB7F /* NSData+OHSerialization.m */,
+				F78A2EE4662621EA4A3037699F3345BE /* NSNumber+OHSerialization.h */,
+				0BBD14DAFCF3FEE35E32CC5BD7119DB7 /* NSNumber+OHSerialization.m */,
+				B13DB3F46A275FD2C4D15D1EC4F84901 /* NSObject+Mapping.h */,
+				09DD1D75CEDFA2E7922879F4B765F732 /* NSObject+Mapping.m */,
+				FBB085F8AE946563A8E068D6AE6CB2BB /* NSString+Escaping.h */,
+				DDBF8BD78C9415991CC7822D66469359 /* NSString+Escaping.m */,
+				46412D447D5B5E2A0745B5FE228C3102 /* NSString+OHSerialization.h */,
+				98CE360164C57CA7D65CFACF93EE2F98 /* NSString+OHSerialization.m */,
+				E6BA5E0351F4CD00EB28412B169CD65A /* NSString+Utility.h */,
+				47E29824A12B27EFE16E711891912DB8 /* NSString+Utility.m */,
+				3ECDEE2DA9CA3F84D65B254A660E8B6A /* OHCharsetEncoding.h */,
+				7A43DFF5E2F3E42A0F1C07DE65291F54 /* OHCharsetEncoding.m */,
+				AFA8916778CB48E2FB2A24B7853A882E /* OHConstants.h */,
+				2D6F66064992A95ABE3B5023946ACD65 /* OHJoinConstants.h */,
+				F771F0472A89B9310DCE7C1834CA2BC3 /* OHJoinConstants.m */,
+				1AE9F984E5EF1CA0901305BFF0D5B77F /* OHLogging.h */,
+				7478606D3E2C21DA5BD80ADFF0CD643A /* OHMappingProtocol.h */,
+				AD9EB49A37F0776DC42726B4BF8EC743 /* OHMySQL.h */,
+				29D2883F2C4792729E551E8BBA672B7C /* OHMySQLContainer.h */,
+				F6D742EE4C6A7B3A5D0C2A6E5BB4DCC7 /* OHMySQLContainer.m */,
+				F4DF7554EB09FFC62473B915BC919CCD /* OHMySQLQueryContext.h */,
+				22697BDE11630D2DD3C7808EB884499C /* OHMySQLQueryContext.m */,
+				119A7771047C069796627F691E61BF6B /* OHMySQLQueryRequest.h */,
+				F9ADD7F4B5DE5A14A63BF7C7B7C1959B /* OHMySQLQueryRequest.m */,
+				E448027E7AA3FE625FB796A2C0CAE06B /* OHMySQLQueryRequestFactory.h */,
+				7CDC185476AD0994AFFAE1A54087931C /* OHMySQLQueryRequestFactory.m */,
+				5481B778117A6C138E3F2C1F0BC8A2B8 /* OHMySQLSerialization.h */,
+				21BFE177D3D6DA42F410D7F3564E7223 /* OHMySQLSerialization.m */,
+				AB5DB8542293BE9E2EE198612FC7B5EC /* OHMySQLStore.h */,
+				5191B5E01A9E5681EF7671771E21D8D4 /* OHMySQLStore.m */,
+				601EE26C4FBA3B1F5CD07447AA19F1B5 /* OHMySQLStoreCoordinator.h */,
+				0402543B13202E870A49894AF467D29C /* OHMySQLStoreCoordinator.m */,
+				90283FCB98FF23CA0628C7A190DAFCEC /* OHMySQLTimeline.h */,
+				05A52D5CDDCF41984F15E67B96EC5434 /* OHMySQLTimeline.m */,
+				080AB0BABC7859FEF9A2D36CB9980454 /* OHMySQLUser.h */,
+				07CDCFD4F2686ADEA9E941FC1D07CAA6 /* OHMySQLUser.m */,
+				C1AE1B27FF3B4727C689AD7DF99B550E /* OHProtocolType.h */,
+				2D40D183FFFC638A2ADDE110DF2ECC1F /* OHRefreshOptions.h */,
+				E7D7C51C0702678D099C52F971DDC39D /* OHResultErrorType.h */,
+				C79AF46893A97295BCBEDAF8F9EF00E1 /* OHSerializationProtocol.h */,
+				C175A839A22629E8388DB5191175256C /* OHSSLConfig.h */,
+				3F58C34676532D907E026F1C7720A354 /* OHSSLConfig.m */,
+				341A75DEDF45338AFCD107E72968FF35 /* plugin_auth_common.h */,
+				85CF534632611887E632ED7B018BDD56 /* plugin_trace.h */,
+				1756E04DB84A1A434C88567300B4F2B7 /* psi.h */,
+				1D32F3678789701F9AB72D3BC3EACF64 /* psi_base.h */,
+				A328EA91F1F3C3DB5343A2833615852B /* psi_memory.h */,
+				DB886CD8F361EB1BD93F941A49526BB9 /* service_my_snprintf.h */,
+				D6ADA8B967873F9E61B0A04EDC67432F /* service_mysql_alloc.h */,
+				2F594BE86F6784A5AB2C409723D7D45B /* sql_common.h */,
+				CBFC0CFE79C0533C28FB815FCDAFB575 /* sql_state.h */,
+				5FF4F07B3A89996AFBA165B54BE265E2 /* sslopt-case.h */,
+				4CC6DD9417E16DB0183A014E19DC2598 /* sslopt-longopts.h */,
+				66EE9598108EA04494647A3E35FFE9BE /* sslopt-vars.h */,
+				73795F6620CE91B4AFF5B6E46F2524FC /* thr_cond.h */,
+				9AFC673E65108EFA1F4A9BF5A2D6D223 /* thr_mutex.h */,
+				69477AE8ACBC6CB7BE5680860463E205 /* thr_rwlock.h */,
+				14DC73B4C811EEFAD07915B604F1B4EF /* typelib.h */,
+				CFE04ACA64C24DE3A08EE0B8CC50825B /* Frameworks */,
+				84540914A86C5F5DF4F3D4EA6F215E2E /* Support Files */,
+			);
+			name = OHMySQL;
+			path = OHMySQL;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -253,43 +537,60 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				D04E66E4F94D2D4C4F3FBCA2FDDD8236 /* Pods */,
-				4F39B3F5DD9D3A1522FA1B334B479F24 /* Products */,
+				BDE853B96195898A25AC91712D4E960E /* Pods */,
+				0B7E3A052ABBFCC72C49EB0F521A4A31 /* Products */,
 				0EBEE510F87BDCD6C1988775AAE6FFC6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A5F63392DE31B3FBCA2BBEC1F6540735 /* MySqlSwiftNative */ = {
+		84540914A86C5F5DF4F3D4EA6F215E2E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4EE956B468A6D9CEB9D2B53D6A88387F /* Connection.swift */,
-				F695A4A7D8E45C361DBCF0BBB11344E0 /* Constants.swift */,
-				9C4FDDD68D9606E74ACB1A33E3FD0764 /* main.swift */,
-				4C9DC207B5E9589B287C6D8ACBB81456 /* mysql.swift */,
-				1C7B46C3B9DBD7CDA9E45C6AD8BCDEF7 /* Packets.swift */,
-				6B6820BA38C95DA055501EED1D1072FB /* Query.swift */,
-				45A60717C509681F0F765045333EB7AE /* Result.swift */,
-				403EC04B96CB3FAA024D08C8FE3DF41D /* sha1.swift */,
-				9FE933378E932913B2D0EDC4BD28EF10 /* Socket.swift */,
-				CF4498793BE1441C11C93DD6F373D18A /* Statement.swift */,
-				AF5BF5794094FAA5B1A35377C000E469 /* Table.swift */,
-				FB8C49188EE6143CC7198033DC124F2D /* tests.swift */,
-				67E513B0F94EC0A606A03983093082E8 /* Utils.swift */,
-				DDDDD99038A4897A8A489A81C6271650 /* Support Files */,
+				14111089D2F23F7012001C3FE32CFC9D /* Info.plist */,
+				ED9CAF08EAF7F5B52E95A0806C0881F1 /* OHMySQL.modulemap */,
+				0E8BEA813FE12435DDC62C6BCA2644D6 /* OHMySQL.xcconfig */,
+				90682D72964737754DD14737E7CA72C8 /* OHMySQL-dummy.m */,
+				CF59FF73ED1A485A5B962B166CC02D75 /* OHMySQL-prefix.pch */,
+				F9FD480FB11C65ABCABF3A6916EC0561 /* OHMySQL-umbrella.h */,
 			);
-			name = MySqlSwiftNative;
-			path = MySqlSwiftNative;
+			name = "Support Files";
+			path = "../Target Support Files/OHMySQL";
 			sourceTree = "<group>";
 		};
-		AE87826A61A89C4479C0AEEFB9858BCA /* SwiftSH */ = {
+		86B6F7EFF7FCE8B2A125274D219A8FF1 /* SwiftSH */ = {
 			isa = PBXGroup;
 			children = (
-				BE49C3C9BF5C492C9F1981CB232B9AC8 /* Core */,
-				5BCAA96262BC2D867E7411516544A257 /* Libssh2 */,
-				7BD9160ADABACBD3BFCFBF22A9F1D0AB /* Support Files */,
+				F5F18BFF8DAC63DCAF2216EF6551F07F /* Core */,
+				926E7D5AF432803629CEE4E7B37608C7 /* Libssh2 */,
+				E5F0141165A925A15C99A5297E1D0851 /* Support Files */,
 			);
 			name = SwiftSH;
 			path = SwiftSH;
+			sourceTree = "<group>";
+		};
+		926E7D5AF432803629CEE4E7B37608C7 /* Libssh2 */ = {
+			isa = PBXGroup;
+			children = (
+				083461235463ADE98A2CAEFB4D9270E0 /* Libssh2.h */,
+				2F798A5DD52130A96CF18AB285D6923B /* Libssh2.m */,
+				BB5CD9813AEFC9E0DEA0BE52B1F50971 /* Libssh2.swift */,
+			);
+			name = Libssh2;
+			sourceTree = "<group>";
+		};
+		937319036AB0C6ABC2CC14DA74B09155 /* SwiftSocket */ = {
+			isa = PBXGroup;
+			children = (
+				4CC8B0ECF37CB6933A829528FE405DC2 /* Result.swift */,
+				94BAA34064A95CA313BA37B2321A81E6 /* Socket.swift */,
+				1F5805A83B0B6869B5A86066BE2A1C3E /* TCPClient.swift */,
+				23DFC4F24B8BBBD5DECD0133C5B8E0D7 /* UDPClient.swift */,
+				993D8F78486442140FC9D01DD459F5F9 /* ytcpsocket.c */,
+				32BDAD63B042F3E2BC35E8C01DEAD0E2 /* yudpsocket.c */,
+				3AB6813FCD213911BF820E3A9637200F /* Support Files */,
+			);
+			name = SwiftSocket;
+			path = SwiftSocket;
 			sourceTree = "<group>";
 		};
 		B00984C01425F64DFCC46097C6EBC152 /* Pods-portScanner */ = {
@@ -318,35 +619,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BE49C3C9BF5C492C9F1981CB232B9AC8 /* Core */ = {
+		BDE853B96195898A25AC91712D4E960E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7DE16CED7D883AF5F3309F9EFD833797 /* Channel.swift */,
-				8CA9938614486BC07A6E9D40AC6D0FD6 /* Command.swift */,
-				6C7EB8CF61ED983719D897FF5511E0F7 /* ConsoleLogger.swift */,
-				C954DF95748739DD10A9934311F22011 /* DNS.swift */,
-				C00E79538743DDDA8FFC7D44ED596EF7 /* Error.swift */,
-				B56E41A64A3308BEC6F0599A4DC04992 /* Extensions.swift */,
-				3F34AA8EE3FB543285A6FC18E31619D7 /* Functions.swift */,
-				28BFE965F863EA303CDF5A4FC7128B61 /* Logger.swift */,
-				4C729B8B848B1DEE8CC6C084CC559AEB /* Queue.swift */,
-				CE21CC882F83AA4F86A8B2B115C5FE13 /* SCP.swift */,
-				5630B62772AB42D910EF192A472EE31D /* Session.swift */,
-				1B0CFE939D25B4CC085857923ECE5BB9 /* SFTP.swift */,
-				D9E64525D534ADE131249606A584C5DB /* Shell.swift */,
-				E074732D2042B4026649AFC18E515FA1 /* SSHLibrary.swift */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		D04E66E4F94D2D4C4F3FBCA2FDDD8236 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A5F63392DE31B3FBCA2BBEC1F6540735 /* MySqlSwiftNative */,
-				AE87826A61A89C4479C0AEEFB9858BCA /* SwiftSH */,
-				770C8F7BBD4F103185317BC24B9BE073 /* SwiftSocket */,
+				760B6253449F0C3BEE30F93B9377E157 /* OHMySQL */,
+				86B6F7EFF7FCE8B2A125274D219A8FF1 /* SwiftSH */,
+				937319036AB0C6ABC2CC14DA74B09155 /* SwiftSocket */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		CFE04ACA64C24DE3A08EE0B8CC50825B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D34DBCF6972B03A1AABEDE7A0AF9EE3A /* libmysqlclient.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -357,100 +645,177 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		DDDDD99038A4897A8A489A81C6271650 /* Support Files */ = {
+		E5F0141165A925A15C99A5297E1D0851 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				054AF7F71850FF10444F5E6E835038B3 /* Info.plist */,
-				37EBCDFCBAA6F184F24EC81F5E1C3E9E /* MySqlSwiftNative.modulemap */,
-				2B99BD255C370FE863C98824D593F95A /* MySqlSwiftNative.xcconfig */,
-				E30B84B5D222B036B0202ACEC943D86B /* MySqlSwiftNative-dummy.m */,
-				D99245A0423B5E28A4CC53E8A266330A /* MySqlSwiftNative-prefix.pch */,
-				B0363FAC3DF47199FAEB75598F48292E /* MySqlSwiftNative-umbrella.h */,
+				025F9DD33385C93E5D7C4D43EE486F2F /* Info.plist */,
+				FEF11A66A5A3B2BD288B7C060B5AB837 /* SwiftSH.modulemap */,
+				82F40A191C59EB5E4E0AA7A4614B752C /* SwiftSH.xcconfig */,
+				072F363141F4664935E1A1B2548371AE /* SwiftSH-dummy.m */,
+				38685EB4CA6994215F922C522A7D850A /* SwiftSH-prefix.pch */,
+				6CA9E207B847E5760D287E4A42D352E9 /* SwiftSH-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/MySqlSwiftNative";
+			path = "../Target Support Files/SwiftSH";
 			sourceTree = "<group>";
 		};
-		E1EFDFB66DD57FC60BB1EE01F06FE49D /* Support Files */ = {
+		F5F18BFF8DAC63DCAF2216EF6551F07F /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				D94020BD83653BF04A6E1E1635F934A2 /* Info.plist */,
-				121724DA11A9380EFEFC383DBBD9A10E /* SwiftSocket.modulemap */,
-				25B5DCD1D9FF10918D5F017736C32D2F /* SwiftSocket.xcconfig */,
-				2CB56011E571C7A8B93223BF8667A642 /* SwiftSocket-dummy.m */,
-				AFEF29A4DEEF5990C6521B1E625A1FA3 /* SwiftSocket-prefix.pch */,
-				F5655D98B34E6D4FB11448F14802032A /* SwiftSocket-umbrella.h */,
+				3FF5EEB6343F0561F536282722BE9806 /* Channel.swift */,
+				C9D078CEB83D062A0A236CA94A2F5EC7 /* Command.swift */,
+				68716E7CB4A81BF713C27D9AF9B7DA3B /* ConsoleLogger.swift */,
+				C19DC697B5F253CADB918B41BDC5261D /* DNS.swift */,
+				78FB33F4923DDE0A0FC19A59FEF0AC53 /* Error.swift */,
+				F0BAC32F6001ED20E8B6D3B75800CD27 /* Extensions.swift */,
+				BF3A00C76095E5CE404451680D7CA959 /* Functions.swift */,
+				123854C95DFE427BE22BA8BF894B6A73 /* Logger.swift */,
+				EC8CB94A5F723BD2978E0BDB3D31209F /* Queue.swift */,
+				B2D4E4D47526F8AF98B094D7EA4CA0E0 /* SCP.swift */,
+				0E25FED00F61DF7BA6CA75691D2FC8EB /* Session.swift */,
+				71C22FB1A4FF6279CEC4D2DB88EED783 /* SFTP.swift */,
+				A2883129B9560A93810BA7BC5F200F1B /* Shell.swift */,
+				F27E273052B8491CDF72F3D2CC485CED /* SSHLibrary.swift */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftSocket";
+			name = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2BC9EC520A888AA706E58C23A5684797 /* Headers */ = {
+		0F792018E3DE30D3D083E0BB742CA3AC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7022B477377C148C0BE4BB749416708A /* Pods-portScanner-umbrella.h in Headers */,
+				26FC040BF1776B6E64D731CC8B2D3E6A /* Libssh2.h in Headers */,
+				9E0E6D45CCF88C0941D9D9007C4E47F1 /* SwiftSH-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5253B5E25152843EBC1F08530C6573BF /* Headers */ = {
+		3D0A05FD0CC31ACFE6E67E6FFB3DEB02 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A081347541F45A968D8F5961E7B9E81C /* MySqlSwiftNative-umbrella.h in Headers */,
+				931A029A3B91E7F1D811181D21461B13 /* Pods-portScanner-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		86ED19C56BEFC2D8EB309A2716A549C7 /* Headers */ = {
+		5290654CF8C849A76850DE96468FDECC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AE8CBD5688E8EB2D53FC17A03E85CEC /* SwiftSocket-umbrella.h in Headers */,
+				51FAD0C37D6FB59050D5609CCF0CAE03 /* SwiftSocket-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D23A2EC096CC02C929C393D45C4BD00C /* Headers */ = {
+		F30CAF0F949258698AF2B0A8824CBFD5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B00333B495E1A22277A091101D5C051 /* Libssh2.h in Headers */,
-				E4F31D26EF46E911C2C2BE81EA9FD269 /* SwiftSH-umbrella.h in Headers */,
+				9D1B33F450093E5525D783B7390CE0A4 /* big_endian.h in Headers */,
+				06E5B546D0FAE3D50D20EF451BB06060 /* binary_log_types.h in Headers */,
+				1EC8B566DB96782ECB137EA05293EEA9 /* byte_order_generic.h in Headers */,
+				6B32B17C6569AB59D0FF7AD69BC0C732 /* byte_order_generic_x86.h in Headers */,
+				4B4228596432D117D063BCDCF49457BD /* client_authentication.h in Headers */,
+				4E570722F08D5970B87A84EB9D7D2DB9 /* client_plugin.h in Headers */,
+				DB74DE7C55650000D7622AC5712738AD /* decimal.h in Headers */,
+				DB06852B53F7C7C5D9B31FACE8588719 /* errmsg.h in Headers */,
+				0A537E42282C9F6741D0E033FD716897 /* get_password.h in Headers */,
+				39C37E3B3E24AECEAB356C2A0D673AF7 /* keycache.h in Headers */,
+				AD6A7C1DE3AE461B077AAB90CB47EA39 /* little_endian.h in Headers */,
+				CEBB98D679F7C78E8013DA70750F130F /* m_ctype.h in Headers */,
+				3CF28220F830BC6167734C4ECBDF7A98 /* m_string.h in Headers */,
+				DB92E8A3A12CCFE3F61EF92AC00308E1 /* my_alloc.h in Headers */,
+				A748BF1EA6C2259B6F344225C95B37E7 /* my_byteorder.h in Headers */,
+				92CD330984F0581D02651CDCB9CCD31A /* my_command.h in Headers */,
+				D01861478E10602CC3816CE879E228C9 /* my_compiler.h in Headers */,
+				C3A096C4C75C7AB5099DEFAA007C6F4D /* my_config.h in Headers */,
+				195E3CD0245A0F2B0823E138257CF86A /* my_dbug.h in Headers */,
+				198275E01662CFDAD4D69ACCC6496D72 /* my_dir.h in Headers */,
+				1B2B12863535E17C0C4CAE2CE563CFB6 /* my_getopt.h in Headers */,
+				22A4579569ADC6256311019CC2789B5A /* my_global.h in Headers */,
+				B9533F7DC6200B382DD042094846CEF7 /* my_list.h in Headers */,
+				8EB881A34B0D6A6D082ECEE173CAC0B7 /* my_sys.h in Headers */,
+				DD452BBB8DDA3E35D66DD22A7A47A92E /* my_thread.h in Headers */,
+				46FAB709A7A04EF7062C3B06A72B0C8E /* my_thread_local.h in Headers */,
+				BBD8DD85AA622D437EF7D21D64ED9B29 /* my_xml.h in Headers */,
+				22F0A3CFD112B9ADD3347592D13A3155 /* mysql.h in Headers */,
+				0554C8CC426AB1665C516DA03AFE4D89 /* mysql_com.h in Headers */,
+				01FE9F0C1BB04CB5D86E5897309EB3D6 /* mysql_com_server.h in Headers */,
+				27E273ACAD6D4F6D0A1CEB0B2C933780 /* mysql_embed.h in Headers */,
+				CCC1E5DB23C09D07C0DC8B33DCBC2C59 /* mysql_file.h in Headers */,
+				827F27032C67BD2A18413D47D22AA9A4 /* mysql_idle.h in Headers */,
+				2D3A0EE33388124F9EF98D494277D7E5 /* mysql_lex_string.h in Headers */,
+				823AE73103CEC1E4BD759AC32DEDA49D /* mysql_mdl.h in Headers */,
+				4DA9E62A19F47B3FFA340C99D0CC9995 /* mysql_memory.h in Headers */,
+				782E66C0A519D63312596F399AEA8685 /* mysql_ps.h in Headers */,
+				DDACD6D2811F376D3EC10B85B12466DD /* mysql_socket.h in Headers */,
+				7D19E0DB556F3119278E837D52F5CCF0 /* mysql_sp.h in Headers */,
+				BF429CC8A49367C74BDFAE0D387306A2 /* mysql_stage.h in Headers */,
+				E5D691D93C7EA30466A7C1E859A42189 /* mysql_statement.h in Headers */,
+				93C2A4C5FF5131488312AC18F99F9C3A /* mysql_table.h in Headers */,
+				C6C4911371C7B573D25C20D98167B61C /* mysql_thread.h in Headers */,
+				43300869AA748F652BEE49AEFDDAF256 /* mysql_time.h in Headers */,
+				1B624F574D1165D1C7D1BDD8A5F6AC17 /* mysql_transaction.h in Headers */,
+				B5366D9A710244A8DD233CF9C370DE63 /* mysql_version.h in Headers */,
+				8BD43D5F7850A31B06FDED65FF914D8C /* mysqld_ername.h in Headers */,
+				78CE9BE9062F086FF56F3709CC2495E4 /* mysqld_error.h in Headers */,
+				26BF9AEDF6F7704C9C24A2D054AAA840 /* NSData+OHSerialization.h in Headers */,
+				6DC933371FF1FDAC1FF1DE6B101BACB1 /* NSNumber+OHSerialization.h in Headers */,
+				77CCEC405ED6B034BF56F2F8F338ADA7 /* NSObject+Mapping.h in Headers */,
+				A3038135C967CB26427A816CB8F06E2F /* NSString+Escaping.h in Headers */,
+				14550478EF81D67C7EC20ED90FEF17D5 /* NSString+OHSerialization.h in Headers */,
+				AD530DFB0A29D8A4F9AF5FD35558DC01 /* NSString+Utility.h in Headers */,
+				BBFAC57D2C726EC265BFF44D04C7940A /* OHCharsetEncoding.h in Headers */,
+				ADC58A3223713845BF09153413D66593 /* OHConstants.h in Headers */,
+				D299EE6ED5BDC16452A30C94A82F9CF5 /* OHJoinConstants.h in Headers */,
+				A11D9971A2A2AD980DB199BD108225CD /* OHLogging.h in Headers */,
+				B44650EBE6043D778245A155A8BFA899 /* OHMappingProtocol.h in Headers */,
+				904FC584472FBA1D475169B4D39CDADE /* OHMySQL-umbrella.h in Headers */,
+				1F8229E85B3E470B00FCCEDA796ADE7E /* OHMySQL.h in Headers */,
+				62F560B5D2047A671475849D846FD2C7 /* OHMySQLContainer.h in Headers */,
+				07AD4A51FFAB37A91E672A2FBD90BED6 /* OHMySQLQueryContext.h in Headers */,
+				8A45FD79FB952CD868668C91FD812E49 /* OHMySQLQueryRequest.h in Headers */,
+				44D69E98C220DD318AF0B0E79DC46735 /* OHMySQLQueryRequestFactory.h in Headers */,
+				51EB6064F092E34FA8009BF1BFD122AE /* OHMySQLSerialization.h in Headers */,
+				E2ED665C2714D07E640308B8F174CFDB /* OHMySQLStore.h in Headers */,
+				0B8257460578650B463900FFC6798EBE /* OHMySQLStoreCoordinator.h in Headers */,
+				64812A8AC1ACC6916832A7A3293E654C /* OHMySQLTimeline.h in Headers */,
+				CEC534A2CEAB27AAD23D70A98E4E4829 /* OHMySQLUser.h in Headers */,
+				79F72D877A6E153664133CAE4AC455D4 /* OHProtocolType.h in Headers */,
+				5CF5961D2E1DF2B42985BDDAB6CFCB0B /* OHRefreshOptions.h in Headers */,
+				0F8EAF5C6FDB99DC372B5B777567FDDC /* OHResultErrorType.h in Headers */,
+				C1520E2446E2FA531DC9FC9F402EF649 /* OHSerializationProtocol.h in Headers */,
+				70D113AA37F71B2A29D271A31495D2EA /* OHSSLConfig.h in Headers */,
+				60A27BBF3A0223EFDED92217E478F0B8 /* plugin_auth_common.h in Headers */,
+				6E233BC291148B3A0DA014C0033FA2A9 /* plugin_trace.h in Headers */,
+				03D1E8CB62A3BC21179638C1185F8CD2 /* psi.h in Headers */,
+				FB90AFF67A0C4CC66750998C7461EDB3 /* psi_base.h in Headers */,
+				307E07320B844C64DEFAE21C6D709255 /* psi_memory.h in Headers */,
+				BD957146572ADC95B1396167BB8DF1DF /* service_my_snprintf.h in Headers */,
+				3AAFBB37E1DC20674C9F7F8F0E057DB3 /* service_mysql_alloc.h in Headers */,
+				C2E8C17FF4F7AF1CC711D48E573BEA2E /* sql_common.h in Headers */,
+				BDC9D808B17C095CBCB4D5D7EAE78029 /* sql_state.h in Headers */,
+				0BABE1072F6C2A3346F2F8C63318E9B7 /* sslopt-case.h in Headers */,
+				6FB8E79CF53E430A3BD9EBE8D5BA2949 /* sslopt-longopts.h in Headers */,
+				225DB55AF4274C9AF5141237EC346672 /* sslopt-vars.h in Headers */,
+				2C6A0A388EF8C46730665A53C41D9C33 /* thr_cond.h in Headers */,
+				1602F2DC4CA09A1C0F65AA88306E95DC /* thr_mutex.h in Headers */,
+				969AEC10FF2758A6E9E0CB8FBC579F90 /* thr_rwlock.h in Headers */,
+				C418756B74C0788A12D91F112D24021E /* typelib.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2685AB14B4156ADFD921F488CB37D33D /* Pods-portScanner */ = {
+		1ED9448AB8AE2D69BD65031A932D3A87 /* SwiftSocket */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 513166375B7BE3E39FDB02BE789A4856 /* Build configuration list for PBXNativeTarget "Pods-portScanner" */;
+			buildConfigurationList = 8335F6A69CAA21A206DCB5D10BD8A0AD /* Build configuration list for PBXNativeTarget "SwiftSocket" */;
 			buildPhases = (
-				5C1432B03C372508E8AE0DF30A35049F /* Sources */,
-				06FD896F71E21C0537CB2662B2A75B69 /* Frameworks */,
-				2BC9EC520A888AA706E58C23A5684797 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0D25F2E45CF788D0C3982B0CC75E9914 /* PBXTargetDependency */,
-				258CEDDE6CB6B2BF04C3704F3B9BE8D6 /* PBXTargetDependency */,
-				6EBF9CB591D4962DC8BFB122DC2BEF44 /* PBXTargetDependency */,
-			);
-			name = "Pods-portScanner";
-			productName = "Pods-portScanner";
-			productReference = B329D5890542344FB1912B145133A602 /* Pods_portScanner.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		3A41E77DDE5B15BA8F36198ECD7826AD /* SwiftSocket */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DD07FFB9C17D035F21057ACB6A6CB492 /* Build configuration list for PBXNativeTarget "SwiftSocket" */;
-			buildPhases = (
-				833A0DCD4BEA5358EFE676CCC1008479 /* Sources */,
-				926507DA5AD71DE132ED092FF579DEAC /* Frameworks */,
-				86ED19C56BEFC2D8EB309A2716A549C7 /* Headers */,
+				D0278E6329B28C9FF36D00D977A959B4 /* Sources */,
+				F63D679E56DDF7A4583E8B7AF2AF0686 /* Frameworks */,
+				5290654CF8C849A76850DE96468FDECC /* Headers */,
 			);
 			buildRules = (
 			);
@@ -458,16 +823,16 @@
 			);
 			name = SwiftSocket;
 			productName = SwiftSocket;
-			productReference = 15585458A57F327680A663E633D8CFA6 /* SwiftSocket.framework */;
+			productReference = 393460DC12EC07BCFFFAB2C7F452ABC7 /* SwiftSocket.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6493A555F65BC13FA5C465E331EE782A /* SwiftSH */ = {
+		43E15267BFEDB048036BF41D34E603D3 /* SwiftSH */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 143E507CECBAA0E3A31FAEAFA5E2D771 /* Build configuration list for PBXNativeTarget "SwiftSH" */;
+			buildConfigurationList = BA801720A57A855E785C90E745E79B0D /* Build configuration list for PBXNativeTarget "SwiftSH" */;
 			buildPhases = (
-				B6E4625AC4CD1DC737A054F77DE38CC0 /* Sources */,
-				5BD9121B2D8D7C5C69D292694FC799D8 /* Frameworks */,
-				D23A2EC096CC02C929C393D45C4BD00C /* Headers */,
+				508B62AD18C5C3752D72E93FB4AF8D4F /* Sources */,
+				E8ED6D0FC518D460319FF9E445BF7980 /* Frameworks */,
+				0F792018E3DE30D3D083E0BB742CA3AC /* Headers */,
 			);
 			buildRules = (
 			);
@@ -475,24 +840,44 @@
 			);
 			name = SwiftSH;
 			productName = SwiftSH;
-			productReference = 4A6E28B1FD1ACF4478E8578E118667D7 /* SwiftSH.framework */;
+			productReference = 37FCD9C7899D689234429099CF0DD446 /* SwiftSH.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BF8EDF5B4A02191462EDB0838EE7D013 /* MySqlSwiftNative */ = {
+		5F7830DC143C68E0758749B7D87577F2 /* Pods-portScanner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9156E2D60D2AD4BA1BCC24426DEC4C34 /* Build configuration list for PBXNativeTarget "MySqlSwiftNative" */;
+			buildConfigurationList = F8AC5B76586F2EC525F8FB9706F74852 /* Build configuration list for PBXNativeTarget "Pods-portScanner" */;
 			buildPhases = (
-				8C7088ECDB42A5C7360F70490EEE473F /* Sources */,
-				62687188F0B267917F03826FCE37587F /* Frameworks */,
-				5253B5E25152843EBC1F08530C6573BF /* Headers */,
+				7851F62095A1121FBCD4E75610BBB412 /* Sources */,
+				651BF11C41E55673233FCBFBA7B0D5D3 /* Frameworks */,
+				3D0A05FD0CC31ACFE6E67E6FFB3DEB02 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED93B35A9082FE96D274354C8441096F /* PBXTargetDependency */,
+				A3D3536051B7BB1FC81D0941DEB7027D /* PBXTargetDependency */,
+				784C13294A3D33DEE37FAD50F24E9DF4 /* PBXTargetDependency */,
+			);
+			name = "Pods-portScanner";
+			productName = "Pods-portScanner";
+			productReference = DDD16D07248A2DEB950E5AD89B39C5E9 /* Pods_portScanner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		79B62E4AF5F8F991FF77695B09D4456D /* OHMySQL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E02CB58B8AD77D5B393F060456332B02 /* Build configuration list for PBXNativeTarget "OHMySQL" */;
+			buildPhases = (
+				252D518B00AC34870213F1A6B155CEBD /* Sources */,
+				0ECC1EAF195409F5ED0B100E3B0464B3 /* Frameworks */,
+				F30CAF0F949258698AF2B0A8824CBFD5 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MySqlSwiftNative;
-			productName = MySqlSwiftNative;
-			productReference = 4054EEC93CF3FD5FB4D2987FAC78A8C4 /* MySqlSwiftNative.framework */;
+			name = OHMySQL;
+			productName = OHMySQL;
+			productReference = 2990634990F8B5164E3AED6CBE009C03 /* OHMySQL.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -512,113 +897,118 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 4F39B3F5DD9D3A1522FA1B334B479F24 /* Products */;
+			productRefGroup = 0B7E3A052ABBFCC72C49EB0F521A4A31 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BF8EDF5B4A02191462EDB0838EE7D013 /* MySqlSwiftNative */,
-				2685AB14B4156ADFD921F488CB37D33D /* Pods-portScanner */,
-				6493A555F65BC13FA5C465E331EE782A /* SwiftSH */,
-				3A41E77DDE5B15BA8F36198ECD7826AD /* SwiftSocket */,
+				79B62E4AF5F8F991FF77695B09D4456D /* OHMySQL */,
+				5F7830DC143C68E0758749B7D87577F2 /* Pods-portScanner */,
+				43E15267BFEDB048036BF41D34E603D3 /* SwiftSH */,
+				1ED9448AB8AE2D69BD65031A932D3A87 /* SwiftSocket */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5C1432B03C372508E8AE0DF30A35049F /* Sources */ = {
+		252D518B00AC34870213F1A6B155CEBD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				224AC7A4A50059A49AA0BC065EEA14C7 /* Pods-portScanner-dummy.m in Sources */,
+				7170295E6A140157E5818808CB256926 /* NSData+OHSerialization.m in Sources */,
+				44E98C2D924067D31288125989E07548 /* NSNumber+OHSerialization.m in Sources */,
+				30018F8BD14FB307ECF8A52B8348A47E /* NSObject+Mapping.m in Sources */,
+				2F525DE070CDF6C1490DDE7DF60404B8 /* NSString+Escaping.m in Sources */,
+				D6FF041821F9D0D32C793ADFB93BD7C9 /* NSString+OHSerialization.m in Sources */,
+				C61A5473A17762C7EB393D5CD9515F21 /* NSString+Utility.m in Sources */,
+				81A7E8671B91DC958C11F0A5BCBD9EEF /* OHCharsetEncoding.m in Sources */,
+				46C80D290F6A31E17866A125445A99BA /* OHJoinConstants.m in Sources */,
+				2437A600FB0FEA5E498CF6AEAEA55D09 /* OHMySQL-dummy.m in Sources */,
+				AF789F2D75313D668C6AD7C327B59F43 /* OHMySQLContainer.m in Sources */,
+				740CC462BDF245031EAE18FC6D33F242 /* OHMySQLQueryContext.m in Sources */,
+				87A6D45688DE259D28A9A2C5D35771E7 /* OHMySQLQueryRequest.m in Sources */,
+				E3489E7AB51E6232B0EF0D322C38033A /* OHMySQLQueryRequestFactory.m in Sources */,
+				1E53A693AA63BA32D825FF7903C83AFC /* OHMySQLSerialization.m in Sources */,
+				3D508B7919269C92B707833EA8D124A3 /* OHMySQLStore.m in Sources */,
+				7349E7433997D6144F61D21524B8AB93 /* OHMySQLStoreCoordinator.m in Sources */,
+				7094814744873E82CE5ACCB1939F8581 /* OHMySQLTimeline.m in Sources */,
+				E72D395125B6AF61299A0D42F511DC4B /* OHMySQLUser.m in Sources */,
+				D6C475449C78065CE4458074F14F120F /* OHSSLConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		833A0DCD4BEA5358EFE676CCC1008479 /* Sources */ = {
+		508B62AD18C5C3752D72E93FB4AF8D4F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65799C7DD8A6164DF0B036E5100EEDF8 /* Result.swift in Sources */,
-				B0E44D2A1661D7C371EFA477E3119903 /* Socket.swift in Sources */,
-				2EBBDF399EDBF4402A8A2091735A0BA8 /* SwiftSocket-dummy.m in Sources */,
-				06DC88335B574970AF51ECE0B5F1A27D /* TCPClient.swift in Sources */,
-				832B33EFA28E8C46020CF555E0DD07FF /* UDPClient.swift in Sources */,
-				4636D87C0535940062AD494B36CA2495 /* ytcpsocket.c in Sources */,
-				802E4EAD230267FCE853B4FF1D5DB451 /* yudpsocket.c in Sources */,
+				6BF4442450A5EEDB6C3DF0F313485EB2 /* Channel.swift in Sources */,
+				FA5A98C5937E1C1EE9F03EA6E1FC180A /* Command.swift in Sources */,
+				4013BCEE91F7A50D8DB7421BC9094B30 /* ConsoleLogger.swift in Sources */,
+				BE648EB790B79F21A40A8F87F708C45E /* DNS.swift in Sources */,
+				B4970B0F90C4571B4D0A8C57501E99A0 /* Error.swift in Sources */,
+				E141BA11FF53E9F216520CE67EC7B39B /* Extensions.swift in Sources */,
+				51B42EFC3011F05FA40DEA71E1CC28EC /* Functions.swift in Sources */,
+				B35BF4ABEB07E5EC572081FFDFAC0C33 /* Libssh2.m in Sources */,
+				760928FB3857964A7203DBCD99691927 /* Libssh2.swift in Sources */,
+				90B08209350F6ED952214367F5DF639C /* Logger.swift in Sources */,
+				D630E6D91C161DFEFAC8ED02E67007D0 /* Queue.swift in Sources */,
+				A9EAE8BDEDED695EADBA90906547E40D /* SCP.swift in Sources */,
+				25B4DD9B425EA2940E6EEBF63B6C99D3 /* Session.swift in Sources */,
+				5E06CE951B36815F0E92380A007BE00C /* SFTP.swift in Sources */,
+				AA3CBEC148B70619F458891B5F2CF064 /* Shell.swift in Sources */,
+				BDB438D966603B16A6D158EB04EB097B /* SSHLibrary.swift in Sources */,
+				333AA01D8249FB3D8E569D7C8172083A /* SwiftSH-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8C7088ECDB42A5C7360F70490EEE473F /* Sources */ = {
+		7851F62095A1121FBCD4E75610BBB412 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A604331582ABA993D62324433E564927 /* Connection.swift in Sources */,
-				B937A53E186082945165694BB4DDA370 /* Constants.swift in Sources */,
-				96E3E08DAEE8AF2B0098B47F54639E3B /* main.swift in Sources */,
-				36F5F9C1A7E3F3DE16D9F6E6E4BEBF62 /* mysql.swift in Sources */,
-				ABBDE29959CC25F99EEF2864E35AD73C /* MySqlSwiftNative-dummy.m in Sources */,
-				6D8154755E77C9BA3753185C978E9B82 /* Packets.swift in Sources */,
-				B55F0399AEE25ACCEFE2E014BEF36433 /* Query.swift in Sources */,
-				83785159BF1ED0BEBABF09973EF54DED /* Result.swift in Sources */,
-				F262B90C3D399626DA25885D7BA60120 /* sha1.swift in Sources */,
-				599E0A24A91A9E31C1144BA837DB88BA /* Socket.swift in Sources */,
-				19C0220A207CD14EF4FB11261C4B0EF7 /* Statement.swift in Sources */,
-				DC7501921E03D923ED6F276ABAFEDF34 /* Table.swift in Sources */,
-				AA54B4F30633FAB103029B0A4597303E /* tests.swift in Sources */,
-				2EEE60BA337BE16FAF55C38417337333 /* Utils.swift in Sources */,
+				F27AFFBDCCA0524CFA89C1D212644FF6 /* Pods-portScanner-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B6E4625AC4CD1DC737A054F77DE38CC0 /* Sources */ = {
+		D0278E6329B28C9FF36D00D977A959B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE91216AEC85F1FFD75547224594D5D1 /* Channel.swift in Sources */,
-				4958B2E3EFE1AD082D58192BCA4B2BA0 /* Command.swift in Sources */,
-				B7351874243A6EF75A7F8DF7C625472E /* ConsoleLogger.swift in Sources */,
-				B9B2002B65D43C4AC79626A17633F461 /* DNS.swift in Sources */,
-				259A8D90846B79121FD6361353B922C3 /* Error.swift in Sources */,
-				0E0DFECF0EAB6A4917FAB495734A1E82 /* Extensions.swift in Sources */,
-				572870565125854A402386CA61946964 /* Functions.swift in Sources */,
-				76D664F4637028E420ECA7F2575FF508 /* Libssh2.m in Sources */,
-				D9CB900008B43B8C269BFD7B3BE3DE45 /* Libssh2.swift in Sources */,
-				D7F8D2562BE053E5FD62A2C6FC72C090 /* Logger.swift in Sources */,
-				61BB2F279384A9D9056FB0BDC39EC1E5 /* Queue.swift in Sources */,
-				BAEC9CD6E7F3A1E46D6E88BF36A70C6B /* SCP.swift in Sources */,
-				EDC25A52F640DA0384C2C1DA042BEB83 /* Session.swift in Sources */,
-				96FAFD824BD5CD5BBCCD61A42532AFDE /* SFTP.swift in Sources */,
-				72629ECC0A2DE1B2DF83729F455A3DA0 /* Shell.swift in Sources */,
-				DA265DCEE92374387FA433DC1BF8E3D7 /* SSHLibrary.swift in Sources */,
-				7F706708B27241D11CB57728A9B5D7DA /* SwiftSH-dummy.m in Sources */,
+				E907BC73234B83B67641437A40CBE97F /* Result.swift in Sources */,
+				0AFF80F57DAD28E77A2F0718DF1DBBAE /* Socket.swift in Sources */,
+				56977CB61D81B0A77925FEF246AAFCA3 /* SwiftSocket-dummy.m in Sources */,
+				772BD1DFF2B28986ACC637F6FDF89806 /* TCPClient.swift in Sources */,
+				5C5DB046BF4839AD8BB0EA438A52C3DF /* UDPClient.swift in Sources */,
+				75C538E59F2BB16135B5C9A38E70A0EF /* ytcpsocket.c in Sources */,
+				F4685B6443B1C15E4C9731719CBACACC /* yudpsocket.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0D25F2E45CF788D0C3982B0CC75E9914 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MySqlSwiftNative;
-			target = BF8EDF5B4A02191462EDB0838EE7D013 /* MySqlSwiftNative */;
-			targetProxy = 51A4089220B587CC0C10746E04D8EB79 /* PBXContainerItemProxy */;
-		};
-		258CEDDE6CB6B2BF04C3704F3B9BE8D6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftSH;
-			target = 6493A555F65BC13FA5C465E331EE782A /* SwiftSH */;
-			targetProxy = A1B3D4A28B1BD538156F736AE8E1FE48 /* PBXContainerItemProxy */;
-		};
-		6EBF9CB591D4962DC8BFB122DC2BEF44 /* PBXTargetDependency */ = {
+		784C13294A3D33DEE37FAD50F24E9DF4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftSocket;
-			target = 3A41E77DDE5B15BA8F36198ECD7826AD /* SwiftSocket */;
-			targetProxy = 072859949DF2E33435DCC236AC42608B /* PBXContainerItemProxy */;
+			target = 1ED9448AB8AE2D69BD65031A932D3A87 /* SwiftSocket */;
+			targetProxy = 41E6864609060FD6DDFC245F0423FAC6 /* PBXContainerItemProxy */;
+		};
+		A3D3536051B7BB1FC81D0941DEB7027D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSH;
+			target = 43E15267BFEDB048036BF41D34E603D3 /* SwiftSH */;
+			targetProxy = 0B9CA1F8CED018E8500447FE7BE00314 /* PBXContainerItemProxy */;
+		};
+		ED93B35A9082FE96D274354C8441096F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OHMySQL;
+			target = 79B62E4AF5F8F991FF77695B09D4456D /* OHMySQL */;
+			targetProxy = 92E17FB1310D0A35C24C45B73FA425CA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		11288DFDD7D2EE4867952BBDB7F43E96 /* Release */ = {
+		069D08435FB924E5E2989D225F79DA8A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25B5DCD1D9FF10918D5F017736C32D2F /* SwiftSocket.xcconfig */;
+			baseConfigurationReference = 8248DD2FF444901C133C1F1969AC02B8 /* SwiftSocket.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -703,103 +1093,6 @@
 			};
 			name = Release;
 		};
-		130730DECE45EBC37143C34917F94FE7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAC966AAA8AF4A3D93AC0CB092A5B217 /* Pods-portScanner.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-portScanner/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-portScanner/Pods-portScanner.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_portScanner;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		238AB87F77C3AD1E8C7251D35C06871B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED79AAB19E3057AE0FC799DF177AF439 /* SwiftSH.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftSH/SwiftSH-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftSH/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftSH/SwiftSH.modulemap";
-				PRODUCT_NAME = SwiftSH;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2A3A4E086F33FB4F84412AD4F34EFF7E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED79AAB19E3057AE0FC799DF177AF439 /* SwiftSH.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftSH/SwiftSH-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftSH/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftSH/SwiftSH.modulemap";
-				PRODUCT_NAME = SwiftSH;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		59F0302F2371FCC6B73EF0A418D40734 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -860,9 +1153,40 @@
 			};
 			name = Debug;
 		};
-		5D7EBFF1BC1912CE3CB1D680295E192D /* Debug */ = {
+		66A2283AF9F818EBB07D8F07CDF09755 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25B5DCD1D9FF10918D5F017736C32D2F /* SwiftSocket.xcconfig */;
+			baseConfigurationReference = 82F40A191C59EB5E4E0AA7A4614B752C /* SwiftSH.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSH/SwiftSH-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSH/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSH/SwiftSH.modulemap";
+				PRODUCT_NAME = SwiftSH;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6E2251625E4B4E36259D3CECB24AF59B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8248DD2FF444901C133C1F1969AC02B8 /* SwiftSocket.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -891,9 +1215,9 @@
 			};
 			name = Debug;
 		};
-		CD55378AA5A33377E3AFA698E50A36C4 /* Debug */ = {
+		72F0A7FAF9600FA97EC58E21040B23B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B99BD255C370FE863C98824D593F95A /* MySqlSwiftNative.xcconfig */;
+			baseConfigurationReference = 0E8BEA813FE12435DDC62C6BCA2644D6 /* OHMySQL.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -904,17 +1228,16 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MySqlSwiftNative/MySqlSwiftNative-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MySqlSwiftNative/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/OHMySQL/OHMySQL-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OHMySQL/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MySqlSwiftNative/MySqlSwiftNative.modulemap";
-				PRODUCT_NAME = MySqlSwiftNative;
+				MODULEMAP_FILE = "Target Support Files/OHMySQL/OHMySQL.modulemap";
+				PRODUCT_NAME = OHMySQL;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -922,7 +1245,104 @@
 			};
 			name = Debug;
 		};
-		D7B9615A8B5A68296E9A7584208D9C56 /* Release */ = {
+		875DC6F829E4683B3831A7DCEE1873FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82F40A191C59EB5E4E0AA7A4614B752C /* SwiftSH.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSH/SwiftSH-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSH/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSH/SwiftSH.modulemap";
+				PRODUCT_NAME = SwiftSH;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8C4A63D06F59F3F2F5116630C56549AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E8BEA813FE12435DDC62C6BCA2644D6 /* OHMySQL.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OHMySQL/OHMySQL-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OHMySQL/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OHMySQL/OHMySQL.modulemap";
+				PRODUCT_NAME = OHMySQL;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8D4436BFECDAEAE0E79ACE3874265077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAC966AAA8AF4A3D93AC0CB092A5B217 /* Pods-portScanner.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-portScanner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-portScanner/Pods-portScanner.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_portScanner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DD8FF53FE0C5286857ABD327F1EA99A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AAE5BB238F4A78CE909239AC2265A93D /* Pods-portScanner.release.xcconfig */;
 			buildSettings = {
@@ -956,50 +1376,9 @@
 			};
 			name = Release;
 		};
-		F270301F8752D6DD9A99268F9F140B8A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B99BD255C370FE863C98824D593F95A /* MySqlSwiftNative.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MySqlSwiftNative/MySqlSwiftNative-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MySqlSwiftNative/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MySqlSwiftNative/MySqlSwiftNative.modulemap";
-				PRODUCT_NAME = MySqlSwiftNative;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		143E507CECBAA0E3A31FAEAFA5E2D771 /* Build configuration list for PBXNativeTarget "SwiftSH" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				238AB87F77C3AD1E8C7251D35C06871B /* Debug */,
-				2A3A4E086F33FB4F84412AD4F34EFF7E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1009,29 +1388,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		513166375B7BE3E39FDB02BE789A4856 /* Build configuration list for PBXNativeTarget "Pods-portScanner" */ = {
+		8335F6A69CAA21A206DCB5D10BD8A0AD /* Build configuration list for PBXNativeTarget "SwiftSocket" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				130730DECE45EBC37143C34917F94FE7 /* Debug */,
-				D7B9615A8B5A68296E9A7584208D9C56 /* Release */,
+				6E2251625E4B4E36259D3CECB24AF59B /* Debug */,
+				069D08435FB924E5E2989D225F79DA8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9156E2D60D2AD4BA1BCC24426DEC4C34 /* Build configuration list for PBXNativeTarget "MySqlSwiftNative" */ = {
+		BA801720A57A855E785C90E745E79B0D /* Build configuration list for PBXNativeTarget "SwiftSH" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CD55378AA5A33377E3AFA698E50A36C4 /* Debug */,
-				F270301F8752D6DD9A99268F9F140B8A /* Release */,
+				66A2283AF9F818EBB07D8F07CDF09755 /* Debug */,
+				875DC6F829E4683B3831A7DCEE1873FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DD07FFB9C17D035F21057ACB6A6CB492 /* Build configuration list for PBXNativeTarget "SwiftSocket" */ = {
+		E02CB58B8AD77D5B393F060456332B02 /* Build configuration list for PBXNativeTarget "OHMySQL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D7EBFF1BC1912CE3CB1D680295E192D /* Debug */,
-				11288DFDD7D2EE4867952BBDB7F43E96 /* Release */,
+				72F0A7FAF9600FA97EC58E21040B23B1 /* Debug */,
+				8C4A63D06F59F3F2F5116630C56549AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8AC5B76586F2EC525F8FB9706F74852 /* Build configuration list for PBXNativeTarget "Pods-portScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D4436BFECDAEAE0E79ACE3874265077 /* Debug */,
+				8DD8FF53FE0C5286857ABD327F1EA99A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

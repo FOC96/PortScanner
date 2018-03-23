@@ -134,12 +134,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/MySqlSwiftNative/MySqlSwiftNative.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/OHMySQL/OHMySQL.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftSH/SwiftSH.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftSocket/SwiftSocket.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/MySqlSwiftNative/MySqlSwiftNative.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/OHMySQL/OHMySQL.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftSH/SwiftSH.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftSocket/SwiftSocket.framework"
 fi
