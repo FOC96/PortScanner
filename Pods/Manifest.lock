@@ -1,5 +1,4 @@
 PODS:
-  - MySqlSwiftNative (1.0.10)
   - SwiftSH (0.1.0):
     - SwiftSH/Libssh2 (= 0.1.0)
   - SwiftSH/Core (0.1.0)
@@ -8,15 +7,13 @@ PODS:
   - SwiftSocket (2.0.2)
 
 DEPENDENCIES:
-  - MySqlSwiftNative (~> 1.0.10)
   - SwiftSH
   - SwiftSocket
 
 SPEC CHECKSUMS:
-  MySqlSwiftNative: 25d6d8c5db9d114a9b839aa5cb7de6d1f460f596
   SwiftSH: bcbe8826153604f6923baf3e0b612bd186e153af
   SwiftSocket: 6f4c9c63fbc5c1d61188936bb3c599fd546f40ae
 
-PODFILE CHECKSUM: 04b3f6a5f3b6757bed274fb910faa6a969964527
+PODFILE CHECKSUM: 83f786e2d6c387c8bfdec540c1e8cff8c58cb266
 
 COCOAPODS: 1.4.0
