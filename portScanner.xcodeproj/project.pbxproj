@@ -41,7 +41,7 @@
 		BC9A2B1120561324005A2CA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC9A2B1420561324005A2CA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC9A2B1620561324005A2CA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BCE661DB2063142E00ADAC09 /* Terminal3306.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Terminal3306.swift; path = portScanner/Terminal3306.swift; sourceTree = "<group>"; };
+		BCE661DB2063142E00ADAC09 /* Terminal3306.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terminal3306.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +76,6 @@
 		BC9A2AFB20561324005A2CA3 = {
 			isa = PBXGroup;
 			children = (
-				BCE661DB2063142E00ADAC09 /* Terminal3306.swift */,
 				BC9A2B0620561324005A2CA3 /* portScanner */,
 				BC9A2B0520561324005A2CA3 /* Products */,
 				54896F7C69C2ED1679FB4AA6 /* Pods */,
@@ -95,6 +94,7 @@
 		BC9A2B0620561324005A2CA3 /* portScanner */ = {
 			isa = PBXGroup;
 			children = (
+				BCE661DB2063142E00ADAC09 /* Terminal3306.swift */,
 				BC9A2B0720561324005A2CA3 /* AppDelegate.swift */,
 				BC9A2B0920561324005A2CA3 /* ViewController.swift */,
 				BC9A2B0B20561324005A2CA3 /* Main.storyboard */,

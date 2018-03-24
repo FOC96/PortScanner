@@ -72,6 +72,7 @@ class ViewController: UIViewController {
                     switch client.connect(timeout: 1) {
                         case .success:
                             openPorts.append(port)
+                        
                         case .failure(_):
                             print("port \(port) closed")
                     }
