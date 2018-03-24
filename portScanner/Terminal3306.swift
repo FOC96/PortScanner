@@ -23,8 +23,10 @@ class Terminal3306: UIViewController {
 
         self.authenticateMySQL()
         // Do any additional setup after loading the view.
-        NotificationCenter.default.addObserver(self, selector: #selector(Terminal3306.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(Terminal3306.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        let tapConsole = UITapGestureRecognizer(target: self, action: #selector(Terminal3306.hideKeyboard))
+        tapConsole.numberOfTapsRequired = 1
+        tapConsole.numberOfTouchesRequired = 1
+        consoleText.addGestureRecognizer(tapConsole)
     }
 
     override func didReceiveMemoryWarning() {
@@ -99,6 +101,9 @@ class Terminal3306: UIViewController {
             self.context.storeCoordinator = self.coordinator
             
             self.showInTextView(string: "successfully connected")
+            
+            NotificationCenter.default.addObserver(self, selector: #selector(Terminal3306.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(Terminal3306.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         }
 
         let cancel = UIAlertAction(title: "Cancelar", style: .cancel) { (action) in
@@ -137,9 +142,13 @@ class Terminal3306: UIViewController {
         let query = OHMySQLQueryRequest(queryString: mensajeText.text)
         showInTextView(string: query.queryString)
 
-        let response = try? self.context.executeQueryRequestAndFetchResult(query)
+        if let response = try? self.context.executeQueryRequestAndFetchResult(query) {
+            showInTextView(string: json(from: response)!)
+        } else {
+            showInTextView(string: "💩 Something went wrong")
+        }
     
-        showInTextView(string: json(from: response!)!)
+        
         
         mensajeText.text = ""
     }
