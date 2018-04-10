@@ -46,7 +46,7 @@ Note: Setting up access permission from the database is needed to use this servi
 
 ## Authors
 * Fernando Ortiz Rico Celio
-* [Marco Antonio Galicia Toriz](https://github.com/galtordev)
+* [Marco Antonio Galicia Toriz](https://github.com/devsmarco)
 
 ## Acknowledgements
 * [swiftsocket](https://github.com/swiftsocket) (SwiftSockets author)
